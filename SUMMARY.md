@@ -6,7 +6,7 @@
 
 ## Status Code
 
-* [API 상태코드/결과코드](status-code/api.md)
+* [API 상태코드/결과코드](api.md)
 * [SMS](status-code/sms.md)
 * [LMS/MMS](status-code/lms-mms.md)
 * [AT/AI/FT](status-code/at-ai-ft.md)
