@@ -93,10 +93,6 @@ Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
