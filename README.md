@@ -89,36 +89,6 @@ API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기
 Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
 {% swagger-parameter in="header" %}
 
 {% endswagger-parameter %}
@@ -131,50 +101,3 @@ Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="MMS 발송에 사용될 이미지 파일을 업로드하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/v2/report" baseUrl="검수 or 운영 도메인" summary="전송 결과 재 요청하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-
-
