@@ -4,6 +4,10 @@ description: 연동 소스 코드
 
 # Quick Start
 
+{% hint style="warning" %}
+발송 전 인증 토큰 생성이 선행되어야합니다.
+{% endhint %}
+
 ### Java
 
 ```java
