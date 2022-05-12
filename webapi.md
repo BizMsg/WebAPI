@@ -22,7 +22,7 @@ Basic 계정:암호(Base64 인코딩)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="accesstoken" type="" required="true" %}
-인증 토
+인증 토큰
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" required="true" name="type" %}
@@ -41,6 +41,30 @@ Bearer
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% tabs %}
+{% tab title="POST /v1/token" %}
+
+{% endtab %}
+
+{% tab title="설명" %}
+
+{% endtab %}
+
+{% tab title="Request" %}
+
+{% endtab %}
+
+{% tab title="Response" %}
+
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+{% endtab %}
+{% endtabs %}
 
 ### **Request**
 
