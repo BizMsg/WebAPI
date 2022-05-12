@@ -269,17 +269,92 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 
 
+### AT/AI
+
+|       키       |  타입  |  길이 |  필수 |                                                   설명                                                  |
+| :-----------: | :--: | :-: | :-: | :---------------------------------------------------------------------------------------------------: |
+|    message    | text |  -  |  Y  |                                            내용 (한글/영문 1000자)                                           |
+|   senderkey   | text |  40 |  Y  |                                                발신 프로필 키                                               |
+|  templatecode | text |  32 |  Y  |                                                 템플릿 코드                                                |
+|     button    | json |  -  |  -  |       <p><strong>* 템플릿에 포함된 경우, 필수 입력</strong></p><p>버튼 (최대 5개) <strong>* BUTTON 참조</strong></p>      |
+|   quickreply  | json |  -  |  -  | <p><strong>* 템플릿에 포함된 경우, 필수 입력</strong></p><p>바로 연결 버튼 (최대 10개) <strong>* QUICKREPLY 참조</strong></p> |
+|     title     | text |  50 |  -  |                <p><strong>* 템플릿에 포함된 경우, 필수 입력</strong></p><p>템플릿 내용 중 강조 표기할 핵심 정보</p>               |
+|     header    | text |  16 |  N  |                                             알림톡 아이템리스트 헤더                                             |
+|      item     | json |  -  |  N  |                                    아이템리스트와 아이템 요약정보 **\* ITEM 참조**                                    |
+| itemhighlight | Json |  -  |  N  |                                   아이템 하이라이트 **\* ITEMHIGHLIGHT 참조**                                   |
 
 
 
+### FT
 
 
 
+|     키     |  타입  |  길이 |  필수 |              설명             |   |   |
+| :-------: | :--: | :-: | :-: | :-------------------------: | - | - |
+|  message  | text |  -  |  Y  |        내용(한글/영문 100자)       |   |   |
+| senderkey | text |  40 |  Y  |           발신 프로필 키          |   |   |
+|   button  | json |  -  |  N  | 버튼 (최대 5개) **\* BUTTON 참조** |   |   |
+|   image   | json |  -  |  N  | 이미지 (최대 1개) **\* IMAGE 참조** |   |   |
+|  userkey  | text |  30 |  N  |           사용자 식별 키          |   |   |
+|   adflag  | text |  1  |  N  |  광고성 메시지 노출 여부 (Y/N, 기본 Y)  |   |   |
+|    wide   | text |  1  |  N  |  와이드 이미지 사용 여부 (Y/N, 기본 N)  |   |   |
 
 
 
+### BUTTON
+
+|        키        |  타입  |  길이 |  필수 |                   설명                  |
+| :-------------: | :--: | :-: | :-: | :-----------------------------------: |
+|       name      | text |  28 |  Y  |  버튼 제목 **\* AC 타입인 경우, ‘채널 추가’로 고정**  |
+|    **\*type**   | text |  2  |  Y  |    버튼 타입 **\* 아래 버튼 타입 별 속성 표 참조**    |
+|     url\_pc     | text |  -  |  N  |            PC 환경에서 이동할 URL            |
+|   url\_mobile   | text |  -  |  N  |          MOBILE 환경에서 이동할 URL          |
+|   scheme\_ios   | text |  -  |  N  |   iOS 환경, Application Custom Scheme   |
+| scheme\_android | text |  -  |  N  | ANDROID 환경, Application Custom Scheme |
+
+**버튼 타입 별 속성 (\*type)**
+
+| 버튼 타입 |        속성       |  타입  | 필수여부 |                                                             설명                                                             |
+| :---: | :-------------: | :--: | :--: | :------------------------------------------------------------------------------------------------------------------------: |
+|   WL  |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
+|       |   url\_mobile   | text |   Y  |                                                     MOBILE 환경에서 이동할 URL                                                    |
+|   AL  |   scheme\_ios   | text |   -  | <p><strong>* scheme_ios, scheme_android, url_mobile 중 2가지 필수 입력</strong></p><p>클릭 시 실행할 OS 별 Application Custom Scheme</p> |
+|       | scheme\_android | text |   -  |                                                                                                                            |
+|       |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
+|       |   url\_mobile   | text |   -  |                                                     MOBILE 환경에서 이동할 URL                                                    |
+|   DS  |        -        |   -  |   -  |                                                    버튼 클릭 시 배송 조회 페이지로 이동                                                   |
+|   BK  |        -        |   -  |   -  |                                                        해당 버튼 텍스트 전송                                                        |
+|   MD  |        -        |   -  |   -  |                                                    해당 버튼 텍스트 + 메시지 본문 전송                                                   |
+|   BC  |        -        |   -  |   -  |                                                  상담톡을 이용하는 카카오톡 채널만 이용 가능                                                  |
+|       |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
+|   BT  |        -        |   -  |   -  |                                            카카오 \| 오픈 빌더의 챗봇을 사용하는 카카오톡 채널만 이용 가능                                           |
+|       |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
+|       |   chat\_event   | text |   N  |                                                      봇 전환 시 연결할 봇 이벤트명                                                     |
+|   AC  |        -        |   -  |   -  |                                                     버튼 클릭 시 카카오톡 채널 추가                                                     |
+
+### ITEM
 
 
 
+|    키    |      -      |   타입  |  길이 |  필수 |     설명    |
+| :-----: | :---------: | :---: | :-: | :-: | :-------: |
+|   list  |             | array |     |  Y  |  아이템 리스트  |
+|         |    title    |  text |  6  |  Y  |    타이틀    |
+|         | description |  text |  23 |  Y  |   디스크립션   |
+| summary |             |  json |     |  N  | 아이템 요약 정보 |
+|         |    title    |  text |  6  |  Y  |    타이틀    |
+|         | description |  text |  14 |  Y  |   디스크립션   |
 
 
+
+### ITEMHIGHLIGHT
+
+|      키      |  타입  |  길이 |  필수 |     설명     |
+| :---------: | :--: | :-: | :-: | :--------: |
+|    title    | text |  30 |  Y  |     타이틀    |
+| description | text |  19 |  Y  |    디스크립션   |
+|   imageUrl  | text | 500 |  N  | 썸네일 이미지 주소 |
+
+
+
+### IMAGE
