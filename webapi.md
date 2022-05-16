@@ -584,6 +584,8 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **MMS (Standalone Media Top – 세로형)**
 
+**글자 수**
+
 | 타이틀 | 디스크립션 | 버튼명 |
 | :-: | :---: | :-: |
 |  16 |   18  |  17 |
@@ -608,13 +610,22 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **MMS (Carousel Medium – 슬라이드형)**
 
+**글자 수**
 
+| 타이틀 | 디스크립션 | 버튼명 |
+| :-: | :---: | :-: |
+|  13 |   14  |  13 |
 
+**\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]**
 
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
+| :------------: | :---: | :---: | :---: |
+|   디스크립션 only   |   28  |   26  |   23  |
+| 타이틀 1줄 + 디스크립션 |   27  |   25  |   23  |
+| 타이틀 2줄 + 디스크립션 |   26  |   23  |   21  |
+| 타이틀 3줄 + 디스크립션 |   24  |   22  |   20  |
 
-
-
-
+**\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]**
 
 
 
