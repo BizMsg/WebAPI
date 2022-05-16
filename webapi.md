@@ -382,3 +382,253 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 
 ### IMAGE
+
+|     키     |  타입  |  길이 |  필수 |        설명        |
+| :-------: | :--: | :-: | :-: | :--------------: |
+|  img\_url | text |  -  |  Y  |      노출할 이미지     |
+| img\_link | text |  -  |  N  | 이미지 클릭 시 이동할 URL |
+
+
+
+### QUICKREPLY
+
+|        키        |  타입  |  길이 |  필수 |                   설명                  |
+| :-------------: | :--: | :-: | :-: | :-----------------------------------: |
+|       name      | text |  28 |  Y  |                바로 연결 제목               |
+|       type      | text |  2  |  Y  |   버튼 연결 타입 **\* 아래 버튼 타입 별 속성 표 참조**  |
+|     url\_pc     | text |  -  |  N  |            PC 환경에서 이동할 URL            |
+|   url\_mobile   | text |  -  |  N  |          MOBILE 환경에서 이동할 URL          |
+|   scheme\_ios   | text |  -  |  N  |   iOS 환경, Application Custom Scheme   |
+| scheme\_android | text |  -  |  N  | ANDROID 환경, Application Custom Scheme |
+|   chat\_extra   | text |  -  |  N  |          상담톡/봇 전환 시 전달할 메타 정보         |
+|   chat\_event   | text |  -  |  N  |           봇 전환 시 연결한 봇 이벤트명           |
+
+
+
+|  타입 |        속성       |  타입  | 필수여부 |                                                             설명                                                             |
+| :-: | :-------------: | :--: | :--: | :------------------------------------------------------------------------------------------------------------------------: |
+|  WL |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
+|     |   url\_mobile   | text |   Y  |                                                     MOBILE 환경에서 이동할 URL                                                    |
+|  AL |   scheme\_ios   | text |   -  | <p><strong>* scheme_ios, scheme_android, url_mobile 중 2가지 필수 입력</strong></p><p>클릭 시 실행할 OS 별 Application Custom Scheme</p> |
+|     | scheme\_android | text |   -  |                                                                                                                            |
+|     |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
+|     |   url\_mobile   | text |   -  |                                                     MOBILE 환경에서 이동할 URL                                                    |
+|  DS |        -        |   -  |   -  |                                                    버튼 클릭 시 배송 조회 페이지로 이동                                                   |
+|  BK |        -        |   -  |   -  |                                                        해당 버튼 텍스트 전송                                                        |
+|  MD |        -        |   -  |   -  |                                                    해당 버튼 텍스트 + 메시지 본문 전송                                                   |
+|  BC |        -        |   -  |   -  |                                                  상담톡을 이용하는 카카오톡 채널만 이용 가능                                                  |
+|     |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
+|  BT |        -        |   -  |   -  |                                            카카오 \| 오픈 빌더의 챗봇을 사용하는 카카오톡 채널만 이용 가능                                           |
+|     |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
+|     |   chat\_event   | text |   N  |                                                      봇 전환 시 연결할 봇 이벤트명                                                     |
+
+\-----------------------------------------------------------------------------------------------------
+
+### Examples
+
+**알림톡**
+
+```json5
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "at",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "at": {
+      "senderkey": "12345",
+      "templatecode": "template",
+      "message": "알림톡 + 버튼(WL)",
+      "button": [
+        {
+          "name": "웹 링크 버튼",
+          "type": "WL",
+          "url_pc": "http://www.bizppurio.com",
+          "url_mobile": "http://www.bizppurio.com"
+        }
+      ]
+    }
+  }
+}
+```
+
+**알림톡 아이템 리스트형**
+
+```json
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "at",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "at": {
+      "senderkey": "12345",
+      "templatecode": "template",
+      "message": "알림톡 아이템리스트 + 버튼(WL)",
+      "header": "헤더 (최대 16자)",
+      "button": [
+        {
+          "name": "웹 링크 버튼",
+          "type": "WL",
+          "url_pc": "http://www.bizppurio.com",
+          "url_mobile": "http://www.bizppurio.com"
+        }
+      ],
+      "item": {
+        "list": [
+          {
+            "title": "타이틀",
+            "description": "디스크립션"
+          },
+          {
+            "title": "타이틀2",
+            "description": "디스크립션2"
+          }
+        ],
+        "summary": {
+          "title": "요약 타이틀",
+          "description": "$100,000원"
+        }
+      },
+      "itemhighlight": {
+        "title": "타이틀",
+        "description": "디스크립션"
+      }
+    }
+  }
+}
+```
+
+
+
+**친구톡**
+
+```json5
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "ai",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "ai": {
+      "senderkey": "12345",
+      "templatecode": "template",
+      "message": "알림톡 이미지"
+    }
+  }
+}
+```
+
+
+
+### **RCS**
+
+****
+
+|       키       |  타입  |  길이 | 필수여부 |                                        설명                                        |   |
+| :-----------: | :--: | :-: | :--: | :------------------------------------------------------------------------------: | - |
+|    message    | json |  -  |   N  |                        메시지 베이스에서 치환할 정보 **\* MESSAGE 참조**                        |   |
+| messagebaseid | text |  40 |   Y  | <p>RCS 공통 포맷 (RCS SMS, LMS, MMS) <strong>* 공통 포맷 참조</strong></p><p>또는 템플릿 ID</p> |   |
+|   chatbotid   | text |  40 |   Y  |                             RCS 브랜드 포탈을 통해 생성한 챗봇 ID                             |   |
+|    agencyid   | text |  20 |   N  |                              대행사 ID (기본 : daoutech)                              |   |
+|     header    | text |  1  |   Y  |                         메시지 상단에 식별 문구 입력 (0:Web 발신, 1:광고)                        |   |
+|     footer    | text |  64 |   N  |                               메시지 하단에 수신 거부 문구를 입력                               |   |
+|  copyallowed  | text |  1  |   N  |                           단말기에서 사용자에게 ‘복사/공유’ 메뉴 보기 여부                           |   |
+|     button    | json |  -  |   N  |                          메시지에 삽입할 버튼 정보 **\* BUTTON 참조**                         |   |
+
+**공통 포맷(MESSAGEBASE ID)**
+
+|     ID     | 메시지 유형1 |        메시지 유형2       | 카드 장 수 | 카드 별 최대 버튼 수 | 본문 길이 (글자수) |
+| :--------: | :-----: | :------------------: | :----: | :----------: | :---------: |
+|  SS000000  |   SMS   |      Standalone      |    1   |       1      |     100     |
+|  SL000000  |   LMS   |      Standalone      |    1   |       3      |     1300    |
+|  SMwThT00  |   MMS   | Standalone Media Top |    1   |       2      |     1300    |
+|  SMwThM00  |   MMS   | Standalone Media Top |    1   |       2      |     1300    |
+| CMwMhM0300 |   MMS   |    Carousel Medium   |    3   |       2      |  1300 (총합)  |
+| CMwMhM0400 |   MMS   |    Carousel Medium   |    4   |       2      |  1300 (총합)  |
+| CMwMhM0500 |   MMS   |    Carousel Medium   |    5   |       2      |  1300 (총합)  |
+| CMwMhM0600 |   MMS   |    Carousel Medium   |    6   |       2      |  1300 (총합)  |
+| CMwShS0300 |   MMS   |    Carousel Small    |    3   |       2      |  1300 (총합)  |
+| CMwShS0400 |   MMS   |    Carousel Small    |    4   |       2      |  1300 (총합)  |
+| CMwShS0500 |   MMS   |    Carousel Small    |    5   |       2      |  1300 (총합)  |
+| CMwShS0600 |   MMS   |    Carousel Small    |    6   |       2      |  1300 (총합)  |
+
+\-----------------------------------------------------------------------------------------------------
+
+
+
+> **\*글자수 및 라인수 정의**
+>
+> 글자 수 : 1줄 당 정상적으로 표현가능한 글자 수, 한글 ‘가’ 기준 측정
+>
+> 줄(라인) 수 : expand 없이 메시지 버블 최대크기에서 표현 가능한 description 줄 수
+
+****
+
+**\[글자 수]**
+
+| 타이틀 | 디스크립션 | 버튼명 |
+| :-: | :---: | :-: |
+|  16 |   18  |  17 |
+
+**\[줄 수(접혀있는 경우)]**
+
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 | 버튼 3개 |
+| :------------: | :---: | :---: | :---: | :---: |
+|   디스크립션 only   |   28  |   26  |   24  |   22  |
+| 타이틀 1줄 + 디스크립션 |   27  |   25  |   23  |   20  |
+| 타이틀 2줄 + 디스크립션 |   26  |   23  |   21  |   19  |
+
+**MMS (Standalone Media Top – 세로형)**
+
+| 타이틀 | 디스크립션 | 버튼명 |
+| :-: | :---: | :-: |
+|  16 |   18  |  17 |
+
+**\[줄 수(Media Tall인 경우, 접혀있는 경우)]**
+
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
+| :------------: | :---: | :---: | :---: |
+|   디스크립션 only   |   9   |   8   |   6   |
+| 타이틀 1줄 + 디스크립션 |   8   |   6   |   4   |
+| 타이틀 2줄 + 디스크립션 |   7   |   5   |   3   |
+
+**\[줄 수(Media Medium인 경우, 접혀있는 경우)]**
+
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
+| :------------: | :---: | :---: | :---: |
+|   디스크립션 only   |   15  |   13  |   11  |
+| 타이틀 1줄 + 디스크립션 |   14  |   12  |   10  |
+| 타이틀 2줄 + 디스크립션 |   13  |   11  |   9   |
+
+\-----------------------------------------------------------------------------------------------------
+
+**MMS (Carousel Medium – 슬라이드형)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
