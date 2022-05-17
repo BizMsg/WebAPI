@@ -613,6 +613,318 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 
 
+### RCS Examples
+
+RCS : 공통 포맷 SMwThT00 (**MMS Standalone Tall**) 사용 **첨부파일 1개, 버튼 1개**
+
+```json
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "rcs",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "rcs": {
+      "messagebaseid": "SMwThT00",
+      "chatbotid": "15880000",
+      "header": "1",
+      "footer": "무료 수신 거부 080-1234-5678",
+      "copyallowed": "Y",
+      "message": {
+        "description": "안녕하세요! MMS-StandaloneTall(SMwThT00)",
+        "media": " maapfile://BR.05NGK0A6dA.20200326140000.001"
+      },
+      "button": [
+        {
+          "suggestions": [
+            {
+              "action": {
+                "urlAction": {
+                  "openUrl": {
+                    "url": "https://www.google.com"
+                  }
+                },
+                "displayText": "구글로 이동"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
+```
+
+RCS : 공통 포맷 : CMwMhM0300 (**MMS Carousel Medium 3장**) 사용 **첨부파일 3개, 버튼 카드 별 2개**
+
+```json
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "rcs",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "rcs": {
+      "messagebaseid": "CMwMhM0300",
+      "chatbotid": "15880000",
+      "header": "0",
+      "copyallowed": "Y",
+      "message": {
+        "title1": "첫번째",
+        "description1": "1번",
+        "media1": "maapfile://BR.05NGK0A6dA.20200326140000.001",
+        "title2": "두번째",
+        "description2": "2번",
+        "media2": "maapfile://BR.05NGK0A6dA.20200326140000.002",
+        "title3": "세번째",
+        "description3": "3번",
+        "media3": "maapfile://BR.05NGK0A6dA.20200326140000.003"
+      },
+      "button": [
+        {
+          "suggestions": [
+            {
+              "action": {
+                "urlAction": {
+                  "openUrl": {
+                    "url": "https://www.google.com"
+                  }
+                },
+                "displayText": "URL 연결하기"
+              }
+            },
+            {
+              "action": {
+                "dialerAction": {
+                  "dialPhoneNumber": {
+                    "phoneNumber": "+1650253000"
+                  }
+                },
+                "displayText": "전화 걸기"
+              }
+            }
+          ]
+        },
+        {
+          "suggestions": [
+            {
+              "action": {
+                "composeAction": {
+                  "composeTextMessage": {
+                    "phoneNumber": "+1650253000",
+                    "text": "Draft to go into the send message text field."
+                  }
+                },
+                "displayText": "메시지 전송"
+              }
+            },
+            {
+              "action": {
+                "clipboardAction": {
+                  "copyToClipboard": {
+                    "text": "COUPONE-1234-1234"
+                  }
+                },
+                "displayText": "복사하기"
+              }
+            }
+          ]
+        },
+        {
+          "suggestions": [
+            {
+              "action": {
+                "calendarAction": {
+                  "createCalendarEvent": {
+                    "startTime": "2017-03-16T17:40:00.214+09:00",
+                    "endTime": "2017-03-18T17:40:00.216+09:00",
+                    "title": "Meeting",
+                    "description": "GSG review meeting"
+                  }
+                },
+                "displayText": "캘린더 등록"
+              }
+            },
+            {
+              "action": {
+                "mapAction": {
+                  "showLocation": {
+                    "location": {
+                      "latitude": 37.4220041,
+                      "longitude": -122.0862515,
+                      "label": "Googleplex"
+                    },
+                    "fallbackUrl": "https://www.google.com/maps/@37.4219162,-22.078063,15z"
+                  }
+                },
+                "displayText": "지도 보여주기"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
+```
+
+* RESEND
+
+메시지 전송이 실패한 경우, 대체 전송 설정
+
+| 키      | 타입   | 길이 | 필수 | 설명                                                    |
+| ------ | ---- | -- | -- | ----------------------------------------------------- |
+| first  | text | -  | N  | 1차 대체 전송 메시지 유형 **\* SMS, LMS, MMS, AT, AI, FT, RCS** |
+| second | text | -  | N  | 2차 대체 전송 메시지 유형 **\* SMS, LMS, MMS**                  |
+
+**1차 대체 전송**
+
+**예시** (AT 전송 실패하는 경우, SMS (1차) 대체 전송)
+
+```json
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "at",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "at": {
+      "senderkey": "12345",
+      "templatecode": "template",
+      "message": "알림톡 + 버튼(WL)",
+      "button": [
+        {
+          "name": "웹 링크 버튼",
+          "type": "WL",
+          "url_mobile": "https: //www.daou.com",
+          "url_pc": "https://www.daou.com"
+        }
+      ]
+    }
+  },
+  "resend": {
+    "first": "sms"
+  },
+  "recontent": {
+    "sms": {
+      "message": "SMS 대체 발송"
+    }
+  }
+}
+
+```
+
+**2차 대체 전**
+
+**예시** (RCS 전송 실패하는 경우, AT (1차) 대체 전송, AT (1차) 대체 전송 실패하는 경우, SMS (2차) 대체 전송.
+
+```json
+{
+  "account": "test",
+  "refkey": "test1234",
+  "type": "rcs",
+  "from": "07000000000",
+  "to": "01000000000",
+  "content": {
+    "rcs": {
+      "messagebaseid": "SL000000",
+      "chatbotid": "15880000",
+      "header": "0",
+      "copyallowed": "Y",
+      "message": {
+        "title": "RCS LMS",
+        "description": "RCS 전송"
+      },
+      "button": [
+        {
+          "suggestions": [
+            {
+              "action": {
+                "mapAction": {
+                  "requestLocationPush": {}
+                },
+                "displayText": "현재 위치 공유하기"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "resend": {
+    "first": "at",
+    "second": "sms"
+  },
+  "recontent": {
+    "at": {
+      "senderkey": "1234",
+      "templatecode": "template",
+      "message": "알림톡 전송",
+      "button": [
+        {
+          "name": "웹 링크 버튼",
+          "type": "WL",
+          "url_mobile": "https://www.daou.com"
+        }
+      ]
+    },
+    "sms": {
+      "message": "SMS 대체 발송"
+    }
+  }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
