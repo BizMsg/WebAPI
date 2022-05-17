@@ -627,17 +627,91 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]**
 
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
+| -------------- | :---: | :---: | :---: |
+| 디스크립션 only     |   17  |   15  |   13  |
+| 타이틀 1줄 + 디스크립션 |   16  |   14  |   12  |
+| 타이틀 2줄 + 디스크립션 |   15  |   13  |   11  |
+| 타이틀 3줄 + 디스크립션 |   14  |   12  |   10  |
+
+\-----------------------------------------------------------------------------------------------------
+
+**MMS (Carousel Small – 슬라이드형)**
+
+**글자 수**
+
+|  타이틀  | 디스크립션 | 버튼명 |
+| :---: | :---: | :-: |
+| **5** |   6   |  5  |
+
+**줄 수 (Media Short인 경우, RCS A2P 단말 기준)**
 
 
 
+|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
+| -------------- | :---: | :---: | :---: |
+| 디스크립션 only     |   20  |   18  |   16  |
+| 타이틀 1줄 + 디스크립션 |   19  |   17  |   15  |
+| 타이틀 2줄 + 디스크립션 |   18  |   16  |   14  |
+| 타이틀 3줄 + 디스크립션 |   17  |   15  |   13  |
+| 타이틀 4줄 + 디스크립션 |   16  |   14  |   12  |
+| 타이틀 5줄 + 디스크립션 |   15  |   13  |   11  |
 
 
 
+### MESSAGE
 
+|      키      |  타입  |  길이 |  필수 |  설명  |
+| :---------: | :--: | :-: | :-: | :--: |
+|    title    | text |  -  |  N  |  제목  |
+|    media    | text |  -  |  N  | 첨부파일 |
+| description | text |  -  |  N  |  내용  |
 
+### BUTTON
 
+| 키           | 타입                     | 설명                    |
+| ----------- | ---------------------- | --------------------- |
+| suggestions | array of 'suggestions' | **\* SUGGESTIONS 참조** |
 
+### SUGGESTIONS
 
+| 키      | 타입   | 설명               |
+| ------ | ---- | ---------------- |
+| Action | json | **\* ACTION 참조** |
+
+### ACTION
+
+| 키                       |  타입  |       설명       |
+| ----------------------- | :--: | :------------: |
+| **displayText**         | text |                |
+| **urlAction**           | json |  **URL 연결하기**  |
+|     openUrl             |      |                |
+|         url             |      |                |
+| **dialerAction**        | json |   **전화 연결하기**  |
+|     dialPhoneNumber     |      |                |
+|         phoneNumber     |      |                |
+| **mapAction**           | json |   **지도 보여주기**  |
+|     showLocation        |      |                |
+|         location        |      |                |
+|             latitude    |      |       위도       |
+|             longitude   |      |       경도       |
+|             label       |      |       표식       |
+|         fallbackUrl     |      |     대체 URL     |
+| **mapAction**           | json | **현재 위치 공유하기** |
+|     requestLocationPush |      |                |
+| **clipboardAction**     | json |    **복사 하기**   |
+|     copyToClipboard     |      |                |
+|         text            |      |  버튼 명 / 복사할 값  |
+| **composeAction**       | json |   **메시지 전송**   |
+|     composeTextMessage  |      |                |
+|         phoneNumber     |      |      수신 번호     |
+|         text            |      |       메시지      |
+| **calendarAction**      | json |   **캘린더 등록**   |
+|     createCalendarEvent |      |                |
+|         startTime       |      |      시작 시간     |
+|         endTime         |      |      종료 시간     |
+|         title           |      |       제목       |
+|         description     |      |       설명       |
 
 
 
