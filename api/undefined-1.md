@@ -920,11 +920,34 @@ Ex) 미국(1) 010-1234-1234로 전송하는 경우
 
 
 
+### Response
 
+**Headers**
 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+```
 
+**Body**
 
+| 키           | 타입   | 길이 | 필수 | 설명                                   |
+| ----------- | ---- | -- | -- | ------------------------------------ |
+| code        | text | 5  | Y  | 결과 코드 **\* 8. API 응답 상태 및 결과 코드 참조** |
+| description | text | 32 | Y  | 결과 메시지                               |
+| messagekey  | text | 32 | Y  | 메시지 키 **\* 고객 문의 및 리포트 재 요청 기준 키**   |
+| refkey      | Text | 32 | Y  | 고객사에서 부여한 키                          |
 
+**예시)**
+
+```json
+{
+  "code": 1000,
+  "description": "Success",
+  "refkey": "123456789012345678901234890123",
+  "messagekey": "190922175225820#ft002951servj8FU67"
+}
+```
 
 
 
