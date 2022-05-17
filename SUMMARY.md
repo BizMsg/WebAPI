@@ -9,6 +9,7 @@
 * [인증토큰 발급](api/undefined.md)
 * [메시지 발송](api/undefined-1.md)
 * [File Upload](api/file-upload.md)
+* [전송 결과](api/undefined-2.md)
 
 ## Status Code
 
