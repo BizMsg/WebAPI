@@ -86,7 +86,6 @@ public class Sample {
         } 
     }
 }
-
 ```
 
 
@@ -139,7 +138,6 @@ response = session.post(url, data=json.dumps(data), headers=headers)
 print("Status code: ", response.status_code)
 print("Printing Entire Post Request")
 print(response.json())
-
 ```
 
 
@@ -191,7 +189,6 @@ namespace BIZPPURIO_HTTP_API
         }
     }
 }
-
 ```
 
 
@@ -290,6 +287,98 @@ console.log('problem with request: ' + e.message);
  
 req.write(data);
 req.end();
-js
 ```
+
+
+
+## Postman 발송
+
+### 인증토큰 발급
+
+Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1/token) 지정하고 Headers만 설정
+
+![Request](<.gitbook/assets/image (3).png>)
+
+
+
+### 메시지 발송 - SMS
+
+1. Post method로 [https://api.bizppurio.com/v3/message](https://api.bizppurio.com/v3/message) 지정
+2. 위에서 발급받은 Bearer Token 입력
+3. Headers 설정
+4. Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확)
+
+![Headers](<.gitbook/assets/image (2).png>)
+
+{% code title="Body" %}
+```json
+{
+    "account": "test12_sla5",
+    "refkey": "test1234",
+    "type": "sms",
+    "from": "07087071037",
+    "to": "01025605927",
+    "content": {
+        "sms": {
+            "message": "SMS 전송"
+        }
+    }
+}
+```
+{% endcode %}
+
+### 메시지 발송 - MMS
+
+총 2번의 API 호출이 이루어집니다.&#x20;
+
+1. 파일 등록 [https://api.bizppurio.com/v1/file](https://api.bizppurio.com/v1/file)
+2. MMS 발송 [https://api.bizppurio.com/v3/message](https://api.bizppurio.com/v3/message)
+
+
+
+### 파일 등록
+
+* MMS 발송에 첨부할 이미지파일 등록
+* 위에서 발급받은 Bearer Token 입력
+* Headers 설정
+* Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확인)
+
+![파일 등록 Headers](<.gitbook/assets/image (4).png>)
+
+![파일 등록 Body](<.gitbook/assets/image (5).png>)
+
+
+
+**----------------------------------------------------------------------------------------------------**
+
+### 발송
+
+![발송 Headers](.gitbook/assets/image.png)
+
+{% code title="Body" %}
+```json
+{
+    "account": "test12_sla5",
+    "refkey": "test1234",
+    "type": "mms",
+    "from": "07087071037",
+    "to": "01025605927",
+    "content": {
+        "mms": {
+            "subject": "제목",
+            "message": "MMS 전송",
+            "file": [
+                {
+                    "type": "IMG",
+                    "key": "1652767389_AD6137866738900004030.jpg"
+                }
+            ]
+        }
+
+    }
+}
+```
+{% endcode %}
+
+
 
