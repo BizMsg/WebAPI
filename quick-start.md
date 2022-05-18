@@ -293,7 +293,3 @@ req.end();
 js
 ```
 
-
-
-## Postman 발송
-
