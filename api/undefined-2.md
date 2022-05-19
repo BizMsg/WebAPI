@@ -17,11 +17,26 @@ Bearer
 **{인증 토큰 발급을 통해 받은 type + " " + accesstoken}**
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="account" type="" %}
+비즈뿌리오 계정
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="messagekey" %}
+메시지 키
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="" %}
 ```javascript
+//Headers
+HTTP/1.1 200 OK
+Content-type: application/json
+
+//body
 {
-    // Response
+  "code":1000,
+  "description":"Success"
 }
+
 ```
 {% endswagger-response %}
 {% endswagger %}
