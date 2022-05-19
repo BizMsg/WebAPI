@@ -297,7 +297,7 @@ req.end();
 
 Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1/token) 지정하고 Headers만 설정
 
-![Request](<.gitbook/assets/image (3).png>)
+![Request](<.gitbook/assets/image (4).png>)
 
 
 
@@ -308,7 +308,7 @@ Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1
 3. Headers 설정
 4. Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확)
 
-![Headers](<.gitbook/assets/image (2).png>)
+![Headers](<.gitbook/assets/image (3).png>)
 
 {% code title="Body" %}
 ```json
@@ -343,9 +343,9 @@ Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1
 * Headers 설정
 * Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확인)
 
-![파일 등록 Headers](<.gitbook/assets/image (4).png>)
+![파일 등록 Headers](<.gitbook/assets/image (5).png>)
 
-![파일 등록 Body](<.gitbook/assets/image (5).png>)
+![파일 등록 Body](<.gitbook/assets/image (6).png>)
 
 
 
