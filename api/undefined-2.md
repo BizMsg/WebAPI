@@ -1,5 +1,31 @@
 # 전송 결과
 
+
+
+{% swagger method="post" path="/v2/report" baseUrl="검수 or 운영 도메인" summary="전송 결과 재 요청하는 기능입니다." %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Content-type" %}
+application/json
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" %}
+Bearer 
+
+**{인증 토큰 발급을 통해 받은 type + " " + accesstoken}**
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
 ## 전송 결과
 
 ### Request
