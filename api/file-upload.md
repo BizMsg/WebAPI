@@ -53,6 +53,43 @@ Content-type: application/json
 {% endswagger-response %}
 {% endswagger %}
 
+
+
+{% tabs %}
+{% tab title="설명" %}
+**File Upload**
+
+서버에 파일을 업로드하여 MMS 전송에 필요한 파일 키를 발급받는 기능입니다.
+{% endtab %}
+
+{% tab title="Request" %}
+**headers**
+
+|       키      |   타입   |                값                |
+| :----------: | :----: | :-----------------------------: |
+| Content-type | String | application/json; charset=utf-8 |
+
+
+
+
+
+**Body**
+
+|             키             |      타입      |             값             |   |
+| :-----------------------: | :----------: | :-----------------------: | - |
+|    Content-Disposition    |    String    | form-data; name="account" |   |
+|        Content-Type       |    String    | text/plain; charset=UTF-8 |   |
+| Content-Transfer-Encoding |    String    |            8bit           |   |
+|            file           | File(String) |          filename         |   |
+|            name           |    String    |            file           |   |
+|          account          |    String    |           계정 ID           |   |
+{% endtab %}
+
+{% tab title="Response" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## MMS 파일 업로드
 
 * 파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.
@@ -74,12 +111,12 @@ Content-Type: multipart/form-data; boundary=5d14-GC42dS9N5BXQAKuhpRfd4VDV54RDDsT
 
 ```http
 --5d14-GC42dS9N5BXQAKuhpRfd4VDV54RDDsTJO4
-Content-Disposition: form-data; name=”account”
+Content-Disposition: form-data; name="account"
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 {비즈뿌리오 계정}
 --5d14-GC42dS9N5BXQAKuhpRfd4VDV54RDDsTJO4
-Content-Disposition: form-data; name=”file”; filename=”1.jpg”
+Content-Disposition: form-data; name="file"; filename="sample.jpg"
 Content-Type: image/jpeg
 Content-Transfer-Encoding: binary
 <actual file content, not shown here>
