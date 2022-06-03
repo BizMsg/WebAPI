@@ -86,7 +86,11 @@ Content-type: application/json
 {% endtab %}
 
 {% tab title="Response" %}
+**headers**
 
+|       키      |   타입   |                값                |
+| :----------: | :----: | :-----------------------------: |
+| Content-type | String | application/json; charset=utf-8 |
 {% endtab %}
 {% endtabs %}
 
