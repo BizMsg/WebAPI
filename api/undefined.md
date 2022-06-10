@@ -6,7 +6,7 @@ API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기
 
 인증 토큰의 유효 시간은 24시간이며, 이후에는 사용이 불가하고 재발급이 필요합니다.
 
-Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.ㅇㅇ
+Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.&#x20;
 {% endswagger-description %}
 
 {% swagger-parameter in="header" required="true" name="Authorization" type="" %}
@@ -14,7 +14,7 @@ Basic 계정:암호(Base64 인코딩)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" required="true" name="Content-type" %}
-
+application/json; charset=utf-8
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="accesstoken" type="" required="true" %}
