@@ -64,28 +64,28 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ```json
 {
-  /*text(20)*//*비즈뿌리오 계정*/
   "account": {},
-  /*text(3)*//*메시지 타입*/
+  /*text(20)*//*비즈뿌리오 계정*/
   "type": {},
-  /*text(20)*//*발신 번호*/
+  /*text(3)*//*메시지 타입*/
   "from": {},
-  /*text(20)*//*수신 번호*/
+  /*text(20)*//*발신 번호*/
   "to": {},
-  /*text(20)*//*국가 코드*/
+  /*text(20)*//*수신 번호*/
   "country": {},
-  /*text(20)*//*메시지 데이터*/
+  /*text(20)*//*국가 코드*/
   "content": {
-  /*text(20)*//*고객사에서 부여한 키*/
+  /*text(20)*//*메시지 데이터*/
   "refkey": {},
-  /*text(20)*//*정산용 부서 코드*/
+  /*text(20)*//*고객사에서 부여한 키*/
   "userinfo": {},
-  /*text(20)*//*대체 전송 메시지 유형*/
+  /*text(20)*//*정산용 부서 코드*/
   "resend": {},
-  /*text(20)*//*대체 전송 메시지 데이터*/
+  /*text(20)*//*대체 전송 메시지 유형*/
   "recontent": {},
-  /*text(20)*//*특부가 사업자 식별코드*/
+  /*text(20)*//*대체 전송 메시지 데이터*/
   "resellercode": {}
+  /*text(20)*//*특부가 사업자 식별코드*/
 }
 ```
 
@@ -948,6 +948,26 @@ Content-type: application/json
   "messagekey": "190922175225820#ft002951servj8FU67"
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

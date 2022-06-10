@@ -110,7 +110,7 @@ Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
+{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="MMS 발송에 사용될 이미지 파일을 업로드하는 기능입니다." %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -132,7 +132,7 @@ Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="MMS 발송에 사용될 이미지 파일을 업로드하는 기능입니다." %}
+{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
 {% swagger-description %}
 
 {% endswagger-description %}
