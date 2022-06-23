@@ -80,39 +80,101 @@ UTF-8 인코딩을 기본으로 제공합니다.
 
 ### **API 기능**
 
-**인증 토큰 발급**
+{% swagger method="post" path="/v1/token" baseUrl="검수 or 운영 도메인" summary="인증 토큰을 발급을 요청하는 기능입니다." %}
+{% swagger-description %}
+API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.
 
-| **설명**  | <ul><li>API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.</li></ul><ul><li>인증 토큰의 유효 시간은 24시간이며, 이후에는 재발급이 필요합니다.</li></ul><ul><li>Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.</li></ul> |
-| :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v1/token<br><strong></strong><code>세부스펙</code></p>                                                                                            |
+인증 토큰의 유효 시간은 24시간이며, 이후에는 사용이 불가하고 재발급이 필요합니다.
 
+Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.
+{% endswagger-description %}
 
+{% swagger-parameter in="header" required="true" %}
 
-**메시지 발송**
+{% endswagger-parameter %}
 
-| **설명**  | <ul><li>메시지 전송을 요청하는 기능입니다.</li></ul>                                                             |
-| :-----: | ------------------------------------------------------------------------------------------------- |
-| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v3/message<br><strong></strong><code>세부스펙</code></p> |
+{% swagger-parameter in="header" required="true" %}
 
-****
+{% endswagger-parameter %}
 
-**File Upload**
+{% swagger-parameter in="body" %}
 
-| **설명**  | <ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul> |
-| :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **URL** | <p><strong>[POST] api.bizppurio.com/v1/file</strong><br><strong>세부스펙</strong></p>                                                                               |
+{% endswagger-parameter %}
 
-****
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
 
-**전송 결과**
+{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
+{% swagger-description %}
 
-| **설명**  | <ul><li>전송 결과를 재요청하는 기능입니다.</li></ul>                                        |
-| :-----: | ---------------------------------------------------------------------------- |
-| **URL** | <p><strong>api.bizppurio.com/v2/report</strong><br><strong>세부스펙</strong></p> |
+{% endswagger-description %}
 
-****
+{% swagger-parameter in="header" %}
 
+{% endswagger-parameter %}
 
+{% swagger-parameter in="header" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="MMS 발송에 사용될 이미지 파일을 업로드하는 기능입니다." %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/v2/report" baseUrl="검수 or 운영 도메인" summary="전송 결과 재 요청하는 기능입니다." %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
 
 
 
