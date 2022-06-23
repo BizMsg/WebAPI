@@ -1,32 +1,21 @@
 # 메시지 발송
 
+### Parameter Description
 
-
-{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" required="true" name="Authorization" type="" %}
-**인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken}**
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" required="true" name="Content-type" %}
-application/json; charset=utf-8
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+| **설명**  | <ul><li>메시지 전송을 요청하는 기능입니다.</li></ul>                                                             |
+| :-----: | ------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v3/message<br><strong></strong><code>세부스펙</code></p> |
 
 ### Request
 
 **Headers**
+
+|       키       |   타입   |                      설명                      |
+| :-----------: | :----: | :------------------------------------------: |
+| Authorization | String | 인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken} |
+|  Content-type | String |        application/json; charset=utf-8       |
+
+**ex)**
 
 ```http
 POST /v3/message HTTP/1.1
@@ -62,30 +51,32 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 |   recontent  | json |  -  |   N  |     대체 전송 메시지 데이터 \* **● CONTENT 참조**     |
 | resellercode | text |  10 |   N  |                특부가사업자 식별코드                |
 
+**ex)**
+
 ```json
 {
-  "account": {},
   /*text(20)*//*비즈뿌리오 계정*/
-  "type": {},
+  "account": {},
   /*text(3)*//*메시지 타입*/
-  "from": {},
+  "type": {},
   /*text(20)*//*발신 번호*/
-  "to": {},
+  "from": {},
   /*text(20)*//*수신 번호*/
-  "country": {},
+  "to": {},
   /*text(20)*//*국가 코드*/
-  "content": {
+  "country": {},
   /*text(20)*//*메시지 데이터*/
-  "refkey": {},
+  "content": {
   /*text(20)*//*고객사에서 부여한 키*/
-  "userinfo": {},
+  "refkey": {},
   /*text(20)*//*정산용 부서 코드*/
-  "resend": {},
+  "userinfo": {},
   /*text(20)*//*대체 전송 메시지 유형*/
-  "recontent": {},
+  "resend": {},
   /*text(20)*//*대체 전송 메시지 데이터*/
-  "resellercode": {}
+  "recontent": {},
   /*text(20)*//*특부가 사업자 식별코드*/
+  "resellercode": {}
 }
 ```
 
@@ -948,26 +939,6 @@ Content-type: application/json
   "messagekey": "190922175225820#ft002951servj8FU67"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
