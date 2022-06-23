@@ -2,105 +2,60 @@
 
 
 
-{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="서버에 파일을 업로드하여 MMS 전송에 필요한 파일 키를 발급받는 기능입니다." %}
-{% swagger-description %}
-파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.
+### Parameter Description
 
-요청 시 파일 업로드 수는 1개로 제한합니다.
-{% endswagger-description %}
+| **설명**  | <ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul> |
+| :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>[POST] api.bizppurio.com/v1/file</strong><br><strong>세부스펙</strong></p>                                                                               |
 
-{% swagger-parameter in="header" required="true" name="Content-type" %}
-multipart/form-data; boundary=
+****
 
-**{사용자 지정 문자열}**
-{% endswagger-parameter %}
+**Request**
 
-{% swagger-parameter in="body" name="Content-Disposition" required="true" %}
-form-data; name="account"
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="Content-Type" %}
-text/plain; charset=UTF-8
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="Content-Transfer-Encoding" %}
-8bit
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="Content-Disposition" %}
-form-data; name="file"; filename="1.jpg"
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="Content-Type" %}
-image/jpeg
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="Content-Transfer-Encoding" %}
-binary
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-//Headers
-HTTP/1.1 200 OK
-Content-type: application/json
-//body
-{
-  "filekey" : "0920msg_123912934949595969"
-}
-
-```
-{% endswagger-response %}
-{% endswagger %}
-
-
-
-{% tabs %}
-{% tab title="설명" %}
-**File Upload**
-
-서버에 파일을 업로드하여 MMS 전송에 필요한 파일 키를 발급받는 기능입니다.
-{% endtab %}
-
-{% tab title="Request" %}
-**headers**
+**Headers**
 
 |       키      |   타입   |                값                |
 | :----------: | :----: | :-----------------------------: |
 | Content-type | String | application/json; charset=utf-8 |
-
-
-
-
 
 **Body**
 
-|             키             |      타입      |             값             |   |
-| :-----------------------: | :----------: | :-----------------------: | - |
-|    Content-Disposition    |    String    | form-data; name="account" |   |
-|        Content-Type       |    String    | text/plain; charset=UTF-8 |   |
-| Content-Transfer-Encoding |    String    |            8bit           |   |
-|            file           | File(String) |          filename         |   |
-|            name           |    String    |            file           |   |
-|          account          |    String    |           계정 ID           |   |
-{% endtab %}
+|             키             |      타입      |             값             |   |   |
+| :-----------------------: | :----------: | :-----------------------: | - | - |
+|    Content-Disposition    |    String    | form-data; name="account" |   |   |
+|        Content-Type       |    String    | text/plain; charset=UTF-8 |   |   |
+| Content-Transfer-Encoding |    String    |            8bit           |   |   |
+|            file           | File(String) |          filename         |   |   |
+|            name           |    String    |            file           |   |   |
+|          account          |    String    |           계정 ID           |   |   |
 
-{% tab title="Response" %}
-**headers**
+****\
+**Response**
+
+**Headers**
 
 |       키      |   타입   |                값                |
 | :----------: | :----: | :-----------------------------: |
 | Content-type | String | application/json; charset=utf-8 |
-{% endtab %}
-{% endtabs %}
 
-## MMS 파일 업로드
+**Body**
 
-* 파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.
-* 파일은 확장자(jpg/jpeg), 크기(30kbyte 이하) 제한이 있습니다.
-* 요청 시 파일 업로드 수는 1개로 제한합니다.
+**성공**
 
-### Request
+|    키    |  타입  |  길이 |  필수 |  설명  |
+| :-----: | :--: | :-: | :-: | :--: |
+| filekey | text |  40 |  Y  | 파일 키 |
+
+**실패**
+
+|      키      |  타입  |  길이 |  필수 |                  설명                  |
+| :---------: | :--: | :-: | :-: | :----------------------------------: |
+|     code    | text |  5  |  Y  | 결과 코드 **\* 8. API 응답 상태 및 결과 코드 참조** |
+| description | text |  32 |  Y  |                 결과 메시                |
+
+### Examples
+
+**Request**
 
 **Header**
 
@@ -129,7 +84,7 @@ Content-Transfer-Encoding: binary
 
 
 
-### Response
+**Response**
 
 **Header**
 
@@ -142,9 +97,11 @@ Content-type: application/json
 
 * 성공
 
-|    키    |  타입  |  길이 |  필수 |  설명  |
-| :-----: | :--: | :-: | :-: | :--: |
-| filekey | text |  40 |  Y  | 파일 키 |
+```json
+{
+  "filekey": "0920msg_123912934949595969"
+}
+```
 
 * 실패
 
@@ -154,14 +111,6 @@ Content-type: application/json
 | description | text |  32 |  Y  |                결과 메시지                |
 
 
-
-**ex)**
-
-```json
-{
-  "filekey": "0920msg_123912934949595969"
-}
-```
 
 
 

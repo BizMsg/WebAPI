@@ -2,44 +2,29 @@
 
 
 
-{% swagger method="post" path="/v2/report" baseUrl="검수 or 운영 도메인" summary="전송 결과 재 요청하는 기능입니다." %}
-{% swagger-description %}
+### Parameter Description
 
-{% endswagger-description %}
+| **설명**  | <ul><li>전송 결과를 재요청하는 기능입니다.</li></ul> |
+| :-----: | ------------------------------------- |
+| **URL** | **api.bizppurio.com/v2/report**       |
 
-{% swagger-parameter in="header" name="Content-type" %}
-application/json
-{% endswagger-parameter %}
+**Request**
 
-{% swagger-parameter in="header" name="Authorization" %}
-Bearer 
+**Header**
 
-**{인증 토큰 발급을 통해 받은 type + " " + accesstoken}**
-{% endswagger-parameter %}
+|       키       |   타입   |                      설명                      |
+| :-----------: | :----: | :------------------------------------------: |
+| Authorization | String | 인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken} |
+|  Content-type | String |        application/json; charset=utf-8       |
 
-{% swagger-parameter in="body" name="account" type="" %}
-비즈뿌리오 계정
-{% endswagger-parameter %}
+**Body**
 
-{% swagger-parameter in="body" name="messagekey" %}
-메시지 키
-{% endswagger-parameter %}
+|      키     |   타입   |    설명    |
+| :--------: | :----: | :------: |
+|   account  | String | 비즈뿌리오 계정 |
+| messagekey | String |   메시지 키  |
 
-{% swagger-response status="200: OK" description="" %}
-```javascript
-//Headers
-HTTP/1.1 200 OK
-Content-type: application/json
 
-//body
-{
-  "code":1000,
-  "description":"Success"
-}
-
-```
-{% endswagger-response %}
-{% endswagger %}
 
 ## 전송 결과
 
