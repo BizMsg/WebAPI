@@ -9,7 +9,7 @@
 API를 사용하여 메시지 전송을 하기 위해서 아래의 조건이 선결되어야 합니다.
 
 **1. 서비스 계정 생성 및 사용 승인**\
-\- 비즈뿌리오 (https://www.bizppurio.com) 에서 API 용도로 계정 생성
+\- 비즈뿌리오 ([https://www.bizppurio.com](https://www.bizppurio.com)) 에서 API 용도로 계정 생성
 
 {% embed url="https://www.bizppurio.com" %}
 
@@ -30,13 +30,13 @@ API를 사용하여 메시지 전송을 하기 위해서 아래의 조건이 선
 
 ### **카카오톡 비즈메시지 사용하는 경우**
 
-&#x20;   1\) 카카오톡 채널 개설 및 비즈니스 채널 신청 (https://center-pf.kakao.com)
+&#x20;   1\) 카카오톡 채널 개설 및 비즈니스 채널 신청 ([https://center-pf.kakao.com](https://center-pf.kakao.com))
 
 {% embed url="https://center-pf.kakao.com" %}
 
-&#x20;   2\) 발신 프로필 키 생성 (https://www.bizppurio.com)
+&#x20;   2\) 발신 프로필 키 생성 ([https://www.bizppurio.com](https://www.bizppurio.com))
 
-&#x20;    ****     3) 알림톡 템플릿 등록/승인 및 친구톡 이미지 등록 (https://www.bizppurio.com)
+&#x20;    ****     3) 알림톡 템플릿 등록/승인 및 친구톡 이미지 등록 ([https://www.bizppurio.com](https://www.bizppurio.com))
 
 {% hint style="info" %}
 API로 카카오톡 비즈메시지 템플릿을 생성하려면 <>을 참고하십시오
@@ -46,15 +46,15 @@ API로 카카오톡 비즈메시지 템플릿을 생성하려면 <>을 참고하
 
 ### RCS **사용하는 경우**
 
-&#x20;   1\) RCS 브랜드 개설 및 대행사 설정 (https://www.rcsbizcenter.com)
+&#x20;   1\) RCS 브랜드 개설 및 대행사 설정 ([https://www.rcsbizcenter.com](https://www.rcsbizcenter.com))
 
 {% embed url="https://www.rcsbizcenter.com" %}
 2\) RCS 브랜드 등록
 {% endembed %}
 
-&#x20;   2\) RCS 브랜드 등록 (https://www.bizppurio.com)
+&#x20;   2\) RCS 브랜드 등록 ([https://www.bizppurio.com](https://www.bizppurio.com))
 
-&#x20;   3\) RCS 발신번호 및 템플릿 등록/승인 (https://www.bizppurio.com)
+&#x20;   3\) RCS 발신번호 및 템플릿 등록/승인 ([https://www.bizppurio.com](https://www.bizppurio.com))
 
 {% embed url="https://www.bizppurio.com" %}
 
@@ -80,101 +80,39 @@ UTF-8 인코딩을 기본으로 제공합니다.
 
 ### **API 기능**
 
-{% swagger method="post" path="/v1/token" baseUrl="검수 or 운영 도메인" summary="인증 토큰을 발급을 요청하는 기능입니다." %}
-{% swagger-description %}
-API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.
+**인증 토큰 발급**
 
-인증 토큰의 유효 시간은 24시간이며, 이후에는 사용이 불가하고 재발급이 필요합니다.
+| **설명**  | <ul><li>API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.</li></ul><ul><li>인증 토큰의 유효 시간은 24시간이며, 이후에는 재발급이 필요합니다.</li></ul><ul><li>Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.</li></ul> |
+| :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v1/token<br><strong></strong><a href="api/undefined.md"><code>세부스펙</code></a><code></code></p>                                                |
 
-Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" required="true" %}
 
-{% endswagger-parameter %}
+**메시지 발송**
 
-{% swagger-parameter in="header" required="true" %}
+| **설명**  | <ul><li>메시지 전송을 요청하는 기능입니다.</li></ul>                                                                                                           |
+| :-----: | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v3/message<br><strong></strong><a href="api/undefined-1.md"><code>세부스펙</code></a><code></code></p> |
 
-{% endswagger-parameter %}
+****
 
-{% swagger-parameter in="body" %}
+**File Upload**
 
-{% endswagger-parameter %}
+| **설명**  | <ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul> |
+| :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>[POST] api.bizppurio.com/v1/file</strong><br><strong></strong><a href="api/file-upload.md"><strong>세부스펙</strong></a><strong></strong></p>            |
 
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+****
 
-{% swagger method="post" path="/v3/message" baseUrl="검수 or 운영 도메인" summary="메시지 전송을 요청하는 기능입니다." %}
-{% swagger-description %}
+**전송 결과**
 
-{% endswagger-description %}
+| **설명**  | <ul><li>전송 결과를 재요청하는 기능입니다.</li></ul>                                                                                                   |
+| :-----: | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>api.bizppurio.com/v2/report</strong><br><strong></strong><a href="api/undefined-2.md"><code>세부스펙</code></a><code></code></p> |
 
-{% swagger-parameter in="header" %}
+****
 
-{% endswagger-parameter %}
 
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/v1/file" baseUrl="검수 or 운영 도메인" summary="MMS 발송에 사용될 이미지 파일을 업로드하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="post" path="/v2/report" baseUrl="검수 or 운영 도메인" summary="전송 결과 재 요청하는 기능입니다." %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
 
 
 
