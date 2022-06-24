@@ -295,7 +295,7 @@ req.end();
 
 ### 인증토큰 발급
 
-Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1/token) 지정하고 Headers만 설정
+Post method로 https://api.bizppurio.com/v1/token 지정하고 Headers만 설정
 
 ![Request](<.gitbook/assets/image (4).png>)
 
@@ -303,7 +303,7 @@ Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1
 
 ### 메시지 발송 - SMS
 
-1. Post method로 [https://api.bizppurio.com/v3/message](https://api.bizppurio.com/v3/message) 지정
+1. Post method로 https://api.bizppurio.com/v3/message 지정
 2. 위에서 발급받은 Bearer Token 입력
 3. Headers 설정
 4. Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확)
@@ -331,8 +331,8 @@ Post method로 [https://api.bizppurio.com/v1/token](https://api.bizppurio.com/v1
 
 총 2번의 API 호출이 이루어집니다.&#x20;
 
-1. 파일 등록 [https://api.bizppurio.com/v1/file](https://api.bizppurio.com/v1/file)
-2. MMS 발송 [https://api.bizppurio.com/v3/message](https://api.bizppurio.com/v3/message)
+1. 파일 등록 https://api.bizppurio.com/v1/file
+2. MMS 발송 https://api.bizppurio.com/v3/message
 
 
 
