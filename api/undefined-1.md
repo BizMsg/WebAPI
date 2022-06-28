@@ -12,8 +12,8 @@
 
 |       키       |   타입   |                      설명                      |
 | :-----------: | :----: | :------------------------------------------: |
-| Authorization | String | 인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken} |
 |  Content-type | String |        application/json; charset=utf-8       |
+| Authorization | String | 인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken} |
 
 **ex)**
 
@@ -81,6 +81,8 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 ```
 
 **----------------------------------------------------------------------------------------------------**
+
+## Content
 
 ### SMS
 
