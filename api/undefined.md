@@ -80,8 +80,6 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 }
 ```
 
-**----------------------------------------------------------------------------------------------------**
-
 ## Content
 
 ### SMS
@@ -313,8 +311,6 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 |     |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
 |     |   chat\_event   | text |   N  |                                                      봇 전환 시 연결할 봇 이벤트명                                                     |
 
-**----------------------------------------------------------------------------------------------------**
-
 ### Examples
 
 **알림톡**
@@ -412,8 +408,6 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
   }
 }
 ```
-
-**----------------------------------------------------------------------------------------------------**
 
 ### **RCS**
 
@@ -546,7 +540,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 |    media    | text |  -  |  N  | 첨부파일 |
 | description | text |  -  |  N  |  내용  |
 
-
+## 여기에 넣어야 함 media 종
 
 ### BUTTON
 
