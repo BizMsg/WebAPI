@@ -1,10 +1,10 @@
-# 발송 결과
+# 전송 결과
 
 
 
 ### Parameter Description
 
-| **설명**  | <ul><li>발송 결과를 재요청하는 기능입니다.</li></ul> |
+| **설명**  | <ul><li>전송 결과를 재요청하는 기능입니다.</li></ul> |
 | :-----: | ------------------------------------- |
 | **URL** | **api.bizppurio.com/v2/report**       |
 
@@ -26,7 +26,7 @@
 
 
 
-## 발송 결과
+## 전송 결과
 
 ### Request
 
@@ -41,26 +41,26 @@ Content-type: application/json
 
 **Body**
 
-|       키      |  필수 |                  설명                 |
-| :----------: | :-: | :---------------------------------: |
-|    DEVICE    |  Y  |                메시지 유형               |
-|    CMSGID    |  Y  |                메시지 키                |
-|     MSGID    |  Y  |             비즈뿌리오 메시지 키             |
-|     PHONE    |  Y  |                수신 번호                |
-|     MEDIA    |  Y  |   실제 발송된 메시지 상세 유형 **\* MEDIA 유형**  |
-|   TO\_NAME   |  N  |                수신자 명                |
-|    UNIXTME   |  Y  |                발송 시간                |
-|    RESULT    |  Y  | 이통사/카카오/RCS 결과 코드 **\*발송 결과 코드 참조** |
-|   USERDATA   |  N  |              정산용 부서 코드              |
-|    WAPINFO   |  N  |  이통사/카카오 정보 **\* SKT/KTF/LGT/KAO**  |
-|    TELRES    |  N  |             이통사 대체 발송 결과            |
-|    TELTIME   |  N  |             이통사 대체 발송 시간            |
-|    KAORES    |  N  |             카카오 대체 발송 결과            |
-|    KAOTIME   |  N  |             카카오 대체 발송 시간            |
-|    RCSRES    |  N  |             RCS 대체 발송 결과            |
-|    RCSTIME   |  N  |             RCS 대체 발송 시간            |
-|  RETRY\_FLAG |  N  |               대체 발송 정보              |
-| RESEND\_FLAG |  N  |             대체 발송 메시지 유형            |
+|       키      |  필수 |                    설명                   |
+| :----------: | :-: | :-------------------------------------: |
+|    DEVICE    |  Y  |                  메시지 유형                 |
+|    CMSGID    |  Y  |                  메시지 키                  |
+|     MSGID    |  Y  |               비즈뿌리오 메시지 키               |
+|     PHONE    |  Y  |                  수신 번호                  |
+|     MEDIA    |  Y  |     실제 발송된 메시지 상세 유형 **\* MEDIA 유형**    |
+|   TO\_NAME   |  N  |                  수신자 명                  |
+|    UNIXTME   |  Y  |                  발송 시간                  |
+|    RESULT    |  Y  | 이통사/카카오/RCS 결과 코드 **\* 9. 전송 결과 코드 참조** |
+|   USERDATA   |  N  |                정산용 부서 코드                |
+|    WAPINFO   |  N  |    이통사/카카오 정보 **\* SKT/KTF/LGT/KAO**    |
+|    TELRES    |  N  |               이통사 대체 전송 결과              |
+|    TELTIME   |  N  |               이통사 대체 전송 시간              |
+|    KAORES    |  N  |               카카오 대체 전송 결과              |
+|    KAOTIME   |  N  |               카카오 대체 전송 시간              |
+|    RCSRES    |  N  |               RCS 대체 전송 결과              |
+|    RCSTIME   |  N  |               RCS 대체 전송 시간              |
+|  RETRY\_FLAG |  N  |                 대체 전송 정보                |
+| RESEND\_FLAG |  N  |               대체 전송 메시지 유형              |
 
 
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 
 
-## 발송 결과 재 요청
+## 전송 결과 재 요청
 
 ### **Request**
 
@@ -122,10 +122,10 @@ Authorization: Bearer {인증 토큰 발급을 통해 받은 type + " " + access
 
 **Body**
 
-|      키     |  타입  |  길이 |  필수 |    설명    |
-| :--------: | :--: | :-: | :-: | :------: |
-|   account  | text |  20 |  Y  | 비즈뿌리오 계정 |
-| messagekey | text |  32 |  Y  |   메시지 키  |
+| 키          | 타입   | 길이 | 필수 | 설명       |
+| ---------- | ---- | -- | -- | -------- |
+| account    | text | 20 | Y  | 비즈뿌리오 계정 |
+| messagekey | text | 32 | Y  | 메시지 키    |
 
 **ex)**
 
@@ -149,10 +149,10 @@ Content-type: application/json
 
 **Body**
 
-|      키      |  타입  |  필수 |                  설명                 |
-| :---------: | :--: | :-: | :---------------------------------: |
-|     code    | text |  Y  | <p>결과 코드 <br>(1000 : 성공, 이외 실패)</p> |
-| description | text |  Y  |                결과 메시지               |
+| 키           | 타입   | 필수 | 설명                       |
+| ----------- | ---- | -- | ------------------------ |
+| code        | text | Y  | 결과 코드 (1000 : 성공, 이외 실패) |
+| description | text | Y  | 결과 메시지                   |
 
 **ex)**
 
@@ -165,9 +165,9 @@ Content-type: application/json
 
 
 
-## 발송 결과 전달 (URL PUSH)
+## 전송 결과 전달 (URL PUSH)
 
-발송 결과는 고객사에서 사전에 등록 요청한 URL로 PUSH 방식으로 전달됩니다.
+전송 결과는 고객사에서 사전에 등록 요청한 URL로 PUSH 방식으로 전달됩니다.
 
 ### Request
 
@@ -182,26 +182,26 @@ Content-type: application/json
 
 ****
 
-|       키      |  필수 |                  설명                 |
-| :----------: | :-: | :---------------------------------: |
-|    DEVICE    |  Y  |                메시지 유형               |
-|    CMSGID    |  Y  |                메시지 키                |
-|     MSGID    |  Y  |             비즈뿌리오 메시지 키             |
-|     PHONE    |  Y  |                수신 번호                |
-|     MEDIA    |  Y  |   실제 발송된 메시지 상세 유형 **\* MEDIA 유형**  |
-|   TO\_NAME   |  N  |                수신자 명                |
-|    UNIXTME   |  Y  |                발송 시간                |
-|    RESULT    |  Y  | 이통사/카카오/RCS 결과 코드 **\*발송 결과 코드 참조** |
-|   USERDATA   |  N  |              정산용 부서 코드              |
-|    WAPINFO   |  N  |  이통사/카카오 정보 **\* SKT/KTF/LGT/KAO**  |
-|    TELRES    |  N  |             이통사 대체 발송 결과            |
-|    TELTIME   |  N  |             이통사 대체 발송 시간            |
-|    KAORES    |  N  |             카카오 대체 발송 결과            |
-|    KAOTIME   |  N  |             카카오 대체 발송 시간            |
-|    RCSRES    |  N  |             RCS 대체 발송 결과            |
-|    RCSTIME   |  N  |             RCS 대체 발송 시간            |
-|  RETRY\_FLAG |  N  |               대체 발송 정보              |
-| RESEND\_FLAG |  N  |             대체 발송 메시지 유형            |
+|       키      |  필수 |                    설명                   |
+| :----------: | :-: | :-------------------------------------: |
+|    DEVICE    |  Y  |                  메시지 유형                 |
+|    CMSGID    |  Y  |                  메시지 키                  |
+|     MSGID    |  Y  |               비즈뿌리오 메시지 키               |
+|     PHONE    |  Y  |                  수신 번호                  |
+|     MEDIA    |  Y  |     실제 발송된 메시지 상세 유형 **\* MEDIA 유형**    |
+|   TO\_NAME   |  N  |                  수신자 명                  |
+|    UNIXTME   |  Y  |                  발송 시간                  |
+|    RESULT    |  Y  | 이통사/카카오/RCS 결과 코드 **\* 9. 전송 결과 코드 참조** |
+|   USERDATA   |  N  |                정산용 부서 코드                |
+|    WAPINFO   |  N  |    이통사/카카오 정보 **\* SKT/KTF/LGT/KAO**    |
+|    TELRES    |  N  |               이통사 대체 전송 결과              |
+|    TELTIME   |  N  |               이통사 대체 전송 시간              |
+|    KAORES    |  N  |               카카오 대체 전송 결과              |
+|    KAOTIME   |  N  |               카카오 대체 전송 시간              |
+|    RCSRES    |  N  |               RCS 대체 전송 결과              |
+|    RCSTIME   |  N  |               RCS 대체 전송 시간              |
+|  RETRY\_FLAG |  N  |                 대체 전송 정보                |
+| RESEND\_FLAG |  N  |               대체 전송 메시지 유형              |
 
 **MEDIA 유형**
 
