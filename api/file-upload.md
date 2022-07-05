@@ -6,7 +6,7 @@
 
 | **설명**  | <ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul> |
 | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **URL** | <p><strong>[POST] api.bizppurio.com/v1/file</strong><br><strong>세부스펙</strong></p>                                                                               |
+| **URL** | **\[POST] api.bizppurio.com/v1/file**                                                                                                                           |
 
 ****
 
@@ -20,14 +20,14 @@
 
 **Body**
 
-|             키             |      타입      |             값             |   |   |
-| :-----------------------: | :----------: | :-----------------------: | - | - |
-|    Content-Disposition    |    String    | form-data; name="account" |   |   |
-|        Content-Type       |    String    | text/plain; charset=UTF-8 |   |   |
-| Content-Transfer-Encoding |    String    |            8bit           |   |   |
-|            file           | File(String) |          filename         |   |   |
-|            name           |    String    |            file           |   |   |
-|          account          |    String    |           계정 ID           |   |   |
+|             키             |      타입      |             값             |
+| :-----------------------: | :----------: | :-----------------------: |
+|    Content-Disposition    |    String    | form-data; name="account" |
+|        Content-Type       |    String    | text/plain; charset=UTF-8 |
+| Content-Transfer-Encoding |    String    |            8bit           |
+|            file           | File(String) |          filename         |
+|            name           |    String    |            file           |
+|          account          |    String    |           계정 ID           |
 
 ****\
 **Response**

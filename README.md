@@ -6,7 +6,7 @@
 
 ### 선결 조건
 
-API를 사용하여 메시지 전송을 하기 위해서 아래의 조건이 선결되어야 합니다.
+API를 사용하여 메시지 발송을 하기 위해서 아래의 조건이 선결되어야 합니다.
 
 **1. 서비스 계정 생성 및 사용 승인**\
 \- 비즈뿌리오 ([https://www.bizppurio.com](https://www.bizppurio.com)) 에서 API 용도로 계정 생성
@@ -84,15 +84,15 @@ UTF-8 인코딩을 기본으로 제공합니다.
 
 | **설명**  | <ul><li>API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.</li></ul><ul><li>인증 토큰의 유효 시간은 24시간이며, 이후에는 재발급이 필요합니다.</li></ul><ul><li>Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.</li></ul> |
 | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v1/token<br><strong></strong><a href="api/undefined.md"><code>세부스펙</code></a><code></code></p>                                                |
+| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v1/token<br><strong></strong><a href="api/authToken.md"><code>세부스펙</code></a><code></code></p>                                                |
 
 
 
 **메시지 발송**
 
-| **설명**  | <ul><li>메시지 전송을 요청하는 기능입니다.</li></ul>                                                                                                           |
-| :-----: | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v3/message<br><strong></strong><a href="api/undefined-1.md"><code>세부스펙</code></a><code></code></p> |
+| **설명**  | <ul><li>메시지 전송을 요청하는 기능입니다.</li></ul>                                                                                                         |
+| :-----: | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **URL** | <p><strong>[POST]</strong> api.bizppurio.com/v3/message<br><strong></strong><a href="api/undefined.md"><code>세부스펙</code></a><code></code></p> |
 
 ****
 
@@ -108,7 +108,7 @@ UTF-8 인코딩을 기본으로 제공합니다.
 
 | **설명**  | <ul><li>전송 결과를 재요청하는 기능입니다.</li></ul>                                                                                                   |
 | :-----: | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **URL** | <p><strong>api.bizppurio.com/v2/report</strong><br><strong></strong><a href="api/undefined-2.md"><code>세부스펙</code></a><code></code></p> |
+| **URL** | <p><strong>api.bizppurio.com/v2/report</strong><br><strong></strong><a href="api/undefined-1.md"><code>세부스펙</code></a><code></code></p> |
 
 ****
 
