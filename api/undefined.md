@@ -159,7 +159,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### AT/AI**/FT**
 
-![](<../.gitbook/assets/image (24) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1).png>)
 
 ### BUTTON
 
@@ -181,7 +181,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### IMAGE
 
-![](<../.gitbook/assets/image (23) (1).png>)
+![](<../.gitbook/assets/image (23) (1) (1).png>)
 
 ### QUICKREPLY
 
@@ -295,7 +295,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **공통 포맷(MESSAGEBASE ID)**
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 > **\*글자수 및 라인수 정의**
 >
@@ -307,7 +307,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[글자 수]**
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 **\[줄 수(접혀있는 경우)]**
 
@@ -323,7 +323,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[줄 수(Media Tall인 경우, 접혀있는 경우)]**
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (24) (1).png>)
 
 **\[줄 수(Media Medium인 경우, 접혀있는 경우)]**
 
@@ -333,48 +333,25 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **글자 수**
 
-| 타이틀 | 디스크립션 | 버튼명 |
-| :-: | :---: | :-: |
-|  13 |   14  |  13 |
+![](<../.gitbook/assets/image (20).png>)
 
 **\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
-| :------------: | :---: | :---: | :---: |
-|   디스크립션 only   |   28  |   26  |   23  |
-| 타이틀 1줄 + 디스크립션 |   27  |   25  |   23  |
-| 타이틀 2줄 + 디스크립션 |   26  |   23  |   21  |
-| 타이틀 3줄 + 디스크립션 |   24  |   22  |   20  |
+![](<../.gitbook/assets/image (24).png>)
 
 **\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
-| -------------- | :---: | :---: | :---: |
-| 디스크립션 only     |   17  |   15  |   13  |
-| 타이틀 1줄 + 디스크립션 |   16  |   14  |   12  |
-| 타이틀 2줄 + 디스크립션 |   15  |   13  |   11  |
-| 타이틀 3줄 + 디스크립션 |   14  |   12  |   10  |
+![](<../.gitbook/assets/image (23).png>)
 
 **MMS (Carousel Small – 슬라이드형)**
 
 **글자 수**
 
-| 타이틀 | 디스크립션 | 버튼명 |
-| :-: | :---: | :-: |
-|  5  |   6   |  5  |
+![](<../.gitbook/assets/image (9).png>)
 
 **줄 수 (Media Short인 경우, RCS A2P 단말 기준)**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
-| :------------: | :---: | :---: | :---: |
-|   디스크립션 only   |   20  |   18  |   16  |
-| 타이틀 1줄 + 디스크립션 |   19  |   17  |   15  |
-| 타이틀 2줄 + 디스크립션 |   18  |   16  |   14  |
-| 타이틀 3줄 + 디스크립션 |   17  |   15  |   13  |
-| 타이틀 4줄 + 디스크립션 |   16  |   14  |   12  |
-| 타이틀 5줄 + 디스크립션 |   15  |   13  |   11  |
-
-
+![](<../.gitbook/assets/image (6).png>)
 
 ### MESSAGE
 
