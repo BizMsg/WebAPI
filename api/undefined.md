@@ -187,22 +187,9 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ![](<../.gitbook/assets/image (15).png>)
 
-|  타입 |        속성       |  타입  | 필수여부 |                                                             설명                                                             |
-| :-: | :-------------: | :--: | :--: | :------------------------------------------------------------------------------------------------------------------------: |
-|  WL |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
-|     |   url\_mobile   | text |   Y  |                                                     MOBILE 환경에서 이동할 URL                                                    |
-|  AL |   scheme\_ios   | text |   -  | <p><strong>* scheme_ios, scheme_android, url_mobile 중 2가지 필수 입력</strong></p><p>클릭 시 실행할 OS 별 Application Custom Scheme</p> |
-|     | scheme\_android | text |   -  |                                                                                                                            |
-|     |     url\_pc     | text |   N  |                                                       PC 환경에서 이동할 URL                                                      |
-|     |   url\_mobile   | text |   -  |                                                     MOBILE 환경에서 이동할 URL                                                    |
-|  DS |        -        |   -  |   -  |                                                    버튼 클릭 시 배송 조회 페이지로 이동                                                   |
-|  BK |        -        |   -  |   -  |                                                        해당 버튼 텍스트 전송                                                        |
-|  MD |        -        |   -  |   -  |                                                    해당 버튼 텍스트 + 메시지 본문 전송                                                   |
-|  BC |        -        |   -  |   -  |                                                  상담톡을 이용하는 카카오톡 채널만 이용 가능                                                  |
-|     |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
-|  BT |        -        |   -  |   -  |                                            카카오 \| 오픈 빌더의 챗봇을 사용하는 카카오톡 채널만 이용 가능                                           |
-|     |   chat\_extra   | text |   N  |                                                      봇 전환 시 전달할 메타 정보                                                      |
-|     |   chat\_event   | text |   N  |                                                      봇 전환 시 연결할 봇 이벤트명                                                     |
+**버튼 타입 별 속성 (\*type)**
+
+![](<../.gitbook/assets/image (8).png>)
 
 ### Examples
 
