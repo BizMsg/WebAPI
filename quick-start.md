@@ -297,7 +297,7 @@ req.end();
 
 Post method로 https://api.bizppurio.com/v1/token 지정하고 Headers만 설정
 
-![Request](<.gitbook/assets/image (4) (1).png>)
+![Request](<.gitbook/assets/image (4) (1) (1).png>)
 
 
 

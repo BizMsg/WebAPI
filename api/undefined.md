@@ -10,7 +10,7 @@
 
 **Header**&#x20;
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16) (1).png>)
 
 **ex)**
 
@@ -291,16 +291,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### **RCS**
 
-|       키       |  타입  |  길이 | 필수여부 |                                        설명                                        |   |
-| :-----------: | :--: | :-: | :--: | :------------------------------------------------------------------------------: | - |
-|    message    | json |  -  |   N  |                        메시지 베이스에서 치환할 정보 **\* MESSAGE 참조**                        |   |
-| messagebaseid | text |  40 |   Y  | <p>RCS 공통 포맷 (RCS SMS, LMS, MMS) <strong>* 공통 포맷 참조</strong></p><p>또는 템플릿 ID</p> |   |
-|   chatbotid   | text |  40 |   Y  |                             RCS 브랜드 포탈을 통해 생성한 챗봇 ID                             |   |
-|    agencyid   | text |  20 |   N  |                              대행사 ID (기본 : daoutech)                              |   |
-|     header    | text |  1  |   Y  |                         메시지 상단에 식별 문구 입력 (0:Web 발신, 1:광고)                        |   |
-|     footer    | text |  64 |   N  |                               메시지 하단에 수신 거부 문구를 입력                               |   |
-|  copyallowed  | text |  1  |   N  |                           단말기에서 사용자에게 ‘복사/공유’ 메뉴 보기 여부                           |   |
-|     button    | json |  -  |   N  |                          메시지에 삽입할 버튼 정보 **\* BUTTON 참조**                         |   |
+![](<../.gitbook/assets/image (16).png>)
 
 **공통 포맷(MESSAGEBASE ID)**
 
