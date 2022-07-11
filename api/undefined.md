@@ -69,7 +69,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### SMS
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 ```json
 {
@@ -95,7 +95,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### LMS
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 ```json
 {
@@ -122,7 +122,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### MMS
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 **file**
 
@@ -159,7 +159,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### AT/AI**/FT**
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (24) (1).png>)
 
 ### BUTTON
 
@@ -177,11 +177,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### ITEMHIGHLIGHT
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (22) (1).png>)
 
 ### IMAGE
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 ### QUICKREPLY
 
@@ -295,20 +295,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **공통 포맷(MESSAGEBASE ID)**
 
-|     ID     | 메시지 유형1 |        메시지 유형2       | 카드 장 수 | 카드 별 최대 버튼 수 | 본문 길이 (글자수) |
-| :--------: | :-----: | :------------------: | :----: | :----------: | :---------: |
-|  SS000000  |   SMS   |      Standalone      |    1   |       1      |     100     |
-|  SL000000  |   LMS   |      Standalone      |    1   |       3      |     1300    |
-|  SMwThT00  |   MMS   | Standalone Media Top |    1   |       2      |     1300    |
-|  SMwThM00  |   MMS   | Standalone Media Top |    1   |       2      |     1300    |
-| CMwMhM0300 |   MMS   |    Carousel Medium   |    3   |       2      |  1300 (총합)  |
-| CMwMhM0400 |   MMS   |    Carousel Medium   |    4   |       2      |  1300 (총합)  |
-| CMwMhM0500 |   MMS   |    Carousel Medium   |    5   |       2      |  1300 (총합)  |
-| CMwMhM0600 |   MMS   |    Carousel Medium   |    6   |       2      |  1300 (총합)  |
-| CMwShS0300 |   MMS   |    Carousel Small    |    3   |       2      |  1300 (총합)  |
-| CMwShS0400 |   MMS   |    Carousel Small    |    4   |       2      |  1300 (총합)  |
-| CMwShS0500 |   MMS   |    Carousel Small    |    5   |       2      |  1300 (총합)  |
-| CMwShS0600 |   MMS   |    Carousel Small    |    6   |       2      |  1300 (총합)  |
+![](<../.gitbook/assets/image (23).png>)
 
 > **\*글자수 및 라인수 정의**
 >
@@ -316,19 +303,15 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 >
 > 줄(라인) 수 : expand 없이 메시지 버블 최대크기에서 표현 가능한 description 줄 수
 
+**LMS (Standalone No media)**
+
 **\[글자 수]**
 
-| 타이틀 | 디스크립션 | 버튼명 |
-| :-: | :---: | :-: |
-|  16 |   18  |  17 |
+![](<../.gitbook/assets/image (20).png>)
 
 **\[줄 수(접혀있는 경우)]**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 | 버튼 3개 |
-| :------------: | :---: | :---: | :---: | :---: |
-|   디스크립션 only   |   28  |   26  |   24  |   22  |
-| 타이틀 1줄 + 디스크립션 |   27  |   25  |   23  |   20  |
-| 타이틀 2줄 + 디스크립션 |   26  |   23  |   21  |   19  |
+![](<../.gitbook/assets/image (12).png>)
 
 
 
@@ -336,25 +319,15 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **글자 수**
 
-| 타이틀 | 디스크립션 | 버튼명 |
-| :-: | :---: | :-: |
-|  16 |   18  |  17 |
+![](<../.gitbook/assets/image (10).png>)
 
 **\[줄 수(Media Tall인 경우, 접혀있는 경우)]**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
-| :------------: | :---: | :---: | :---: |
-|   디스크립션 only   |   9   |   8   |   6   |
-| 타이틀 1줄 + 디스크립션 |   8   |   6   |   4   |
-| 타이틀 2줄 + 디스크립션 |   7   |   5   |   3   |
+![](<../.gitbook/assets/image (24).png>)
 
 **\[줄 수(Media Medium인 경우, 접혀있는 경우)]**
 
-|                | 버튼 0개 | 버튼 1개 | 버튼 2개 |
-| :------------: | :---: | :---: | :---: |
-|   디스크립션 only   |   15  |   13  |   11  |
-| 타이틀 1줄 + 디스크립션 |   14  |   12  |   10  |
-| 타이틀 2줄 + 디스크립션 |   13  |   11  |   9   |
+![](<../.gitbook/assets/image (2).png>)
 
 **MMS (Carousel Medium – 슬라이드형)**
 
