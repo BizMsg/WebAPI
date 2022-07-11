@@ -189,7 +189,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **버튼 타입 별 속성 (\*type)**
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (26).png>)
 
 ### Examples
 
