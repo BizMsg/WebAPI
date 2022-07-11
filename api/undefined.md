@@ -10,6 +10,8 @@
 
 **Headers**
 
+****
+
 |       키       |   타입   |                      설명                      |
 | :-----------: | :----: | :------------------------------------------: |
 |  Content-type | String |        application/json; charset=utf-8       |
@@ -540,7 +542,15 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 |    media    | text |  -  |  N  | 첨부파일 |
 | description | text |  -  |  N  |  내용  |
 
-## 여기에 넣어야 함 media 종
+
+
+### media 종류&#x20;
+
+**이미지**
+
+비즈뿌리오 사이트의 \[메시지관리] – \[RCS 관리] – \[RCS 이미지 관리] 메뉴에서 이미지를 등록하여 사용합니다.
+
+이미지는 등록일로부터 365일간 발송 가능합니다. (이후 자동 삭제)
 
 ### BUTTON
 
