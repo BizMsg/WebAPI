@@ -16,7 +16,7 @@ layout: editorial
 
 **Header**
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (26) (1).png>)
 
 **Body**
 

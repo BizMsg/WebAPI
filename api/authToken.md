@@ -8,18 +8,11 @@
 
 **Request**
 
-|       키       |   타입   |                설명               |
-| :-----------: | :----: | :-----------------------------: |
-| Authorization | String |     Basic 계정:암호(Base64 인코딩)     |
-|  Content-type | String | application/json; charset=utf-8 |
+![](<../.gitbook/assets/image (26).png>)
 
 **Response**
 
-|      키      |   타입   |                설명               |
-| :---------: | :----: | :-----------------------------: |
-| accesstoken | String |     Basic 계정:암호(Base64 인코딩)     |
-|     type    | String | application/json; charset=utf-8 |
-|   expired   | String |             토큰 만료 시점            |
+![](<../.gitbook/assets/image (9).png>)
 
 ****
 
@@ -56,16 +49,4 @@ Content-type: application/json; charset=utf-8
   "expired": "20201110185520"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 

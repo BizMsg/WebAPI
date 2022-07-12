@@ -189,7 +189,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **버튼 타입 별 속성 (\*type)**
 
-![](<../.gitbook/assets/image (26) (1) (1).png>)
+![](<../.gitbook/assets/image (26) (1) (1) (1).png>)
 
 ### Examples
 
@@ -347,7 +347,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **글자 수**
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 **줄 수 (Media Short인 경우, RCS A2P 단말 기준)**
 
@@ -698,7 +698,7 @@ Content-type: application/json
 
 **Body**
 
-![](<../.gitbook/assets/image (26) (1).png>)
+![](<../.gitbook/assets/image (26) (1) (1).png>)
 
 **예시)**
 
