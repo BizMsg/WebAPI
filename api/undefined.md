@@ -10,7 +10,7 @@
 
 **Header**&#x20;
 
-![](<../.gitbook/assets/image (16) (1).png>)
+![](<../.gitbook/assets/image (16) (1) (1).png>)
 
 **ex)**
 
@@ -34,7 +34,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 * 공통
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 **ex)**
 
@@ -95,7 +95,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### LMS
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ```json
 {
@@ -126,7 +126,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **file**
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (25) (1).png>)
 
 ```json
 {
@@ -159,11 +159,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### AT/AI**/FT**
 
-![](<../.gitbook/assets/image (24) (1) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1) (1).png>)
 
 ### BUTTON
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 **버튼 타입 별 속성 (\*type)**
 
@@ -173,7 +173,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### ITEM
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (18) (1).png>)
 
 ### ITEMHIGHLIGHT
 
@@ -181,7 +181,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### IMAGE
 
-![](<../.gitbook/assets/image (23) (1) (1).png>)
+![](<../.gitbook/assets/image (23) (1) (1) (1).png>)
 
 ### QUICKREPLY
 
@@ -189,7 +189,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **버튼 타입 별 속성 (\*type)**
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (26) (1).png>)
 
 ### Examples
 
@@ -291,11 +291,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### **RCS**
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16) (1).png>)
 
 **공통 포맷(MESSAGEBASE ID)**
 
-![](<../.gitbook/assets/image (23) (1).png>)
+![](<../.gitbook/assets/image (23) (1) (1).png>)
 
 > **\*글자수 및 라인수 정의**
 >
@@ -323,11 +323,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[줄 수(Media Tall인 경우, 접혀있는 경우)]**
 
-![](<../.gitbook/assets/image (24) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1).png>)
 
 **\[줄 수(Media Medium인 경우, 접혀있는 경우)]**
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 **MMS (Carousel Medium – 슬라이드형)**
 
@@ -337,11 +337,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]**
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (24) (1).png>)
 
 **\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]**
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 **MMS (Carousel Small – 슬라이드형)**
 
@@ -355,11 +355,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### MESSAGE
 
-|      키      |  타입  |  길이 |  필수 |  설명  |
-| :---------: | :--: | :-: | :-: | :--: |
-|    title    | text |  -  |  N  |  제목  |
-|    media    | text |  -  |  N  | 첨부파일 |
-| description | text |  -  |  N  |  내용  |
+![](<../.gitbook/assets/image (27).png>)
 
 
 
@@ -371,55 +367,36 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 이미지는 등록일로부터 365일간 발송 가능합니다. (이후 자동 삭제)
 
+**이미지 URL**
+
+포맷 : **maapfile://{fileId}**
+
+예시 : "media":"maapfile://BR.i6dOpSm8N8.20200302150000.001"
+
+
+
+**동영상 스트리밍**
+
+* 3가지 형태의 YouTube URL 주소 지원 \
+  ****(정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
+* 동영상 썸네일은 등록된 이미지만 사용 가능하며 YouTube URL 뒤에 콤마(,)와 함께 입력\
+  (콤마(,) 외 공백을 포함하는 경우 실패)
+
 ### BUTTON
 
-| 키           | 타입                     | 설명                    |
-| ----------- | ---------------------- | --------------------- |
-| suggestions | array of 'suggestions' | **\* SUGGESTIONS 참조** |
+![](<../.gitbook/assets/image (7).png>)
 
 
 
 ### SUGGESTIONS
 
-| 키      | 타입   | 설명               |
-| ------ | ---- | ---------------- |
-| Action | json | **\* ACTION 참조** |
+![](<../.gitbook/assets/image (18).png>)
 
 
 
 ### ACTION
 
-| 키                       |  타입  |       설명       |
-| ----------------------- | :--: | :------------: |
-| **displayText**         | text |                |
-| **urlAction**           | json |  **URL 연결하기**  |
-|     openUrl             |      |                |
-|         url             |      |                |
-| **dialerAction**        | json |   **전화 연결하기**  |
-|     dialPhoneNumber     |      |                |
-|         phoneNumber     |      |                |
-| **mapAction**           | json |   **지도 보여주기**  |
-|     showLocation        |      |                |
-|         location        |      |                |
-|             latitude    |      |       위도       |
-|             longitude   |      |       경도       |
-|             label       |      |       표식       |
-|         fallbackUrl     |      |     대체 URL     |
-| **mapAction**           | json | **현재 위치 공유하기** |
-|     requestLocationPush |      |                |
-| **clipboardAction**     | json |    **복사 하기**   |
-|     copyToClipboard     |      |                |
-|         text            |      |  버튼 명 / 복사할 값  |
-| **composeAction**       | json |   **메시지 전송**   |
-|     composeTextMessage  |      |                |
-|         phoneNumber     |      |      수신 번호     |
-|         text            |      |       메시지      |
-| **calendarAction**      | json |   **캘린더 등록**   |
-|     createCalendarEvent |      |                |
-|         startTime       |      |      시작 시간     |
-|         endTime         |      |      종료 시간     |
-|         title           |      |       제목       |
-|         description     |      |       설명       |
+![](<../.gitbook/assets/image (25).png>)
 
 
 
@@ -586,10 +563,7 @@ RCS : 공통 포맷 : CMwMhM0300 (**MMS Carousel Medium 3장**) 사용 **첨부�
 
 메시지 전송이 실패한 경우, 대체 전송 설정
 
-|    키   |  타입  |  필수 | 설명                                                    |
-| :----: | :--: | :-: | ----------------------------------------------------- |
-|  first | text |  N  | 1차 대체 전송 메시지 유형 **\* SMS, LMS, MMS, AT, AI, FT, RCS** |
-| second | text |  N  | 2차 대체 전송 메시지 유형 **\* SMS, LMS, MMS**                  |
+![](<../.gitbook/assets/image (24).png>)
 
 **1차 대체 전송**
 
@@ -695,40 +669,23 @@ RCS : 공통 포맷 : CMwMhM0300 (**MMS Carousel Medium 3장**) 사용 **첨부�
 
 ### 국제 메시지 발송
 
-**해외수신자에게 국제 메시지를 발송하는 서비스**
+* **해외수신자에게 국제 메시지를 발송하는 서비스**
 
 
 
 **메시지 유형별 메시지 길이 제한**
 
-| 메시지 유형 |           설명           |
-| :----: | :--------------------: |
-|   sms  |  본문 최대 한글 50자, 영문 150자 |
-|   lms  | 본문 최대 한글 150자, 영문 450자 |
-|   at   |       한글/영문 1000자      |
-|   ft   |       한글/영문 1000자      |
+![](<../.gitbook/assets/image (23).png>)
+
+****
 
 Ex) 미국(1) 010-1234-1234로 전송하는 경우
 
 **\* 수신 번호에 국가 코드를 포함하는 경우**&#x20;
 
-| 지원 메시지 유형 |          주요 파라미터 예시         |
-| :-------: | :-------------------------: |
-|    sms    | **"**to" : "00211012341234" |
-|    lms    | **"**to" : "00211012341234" |
+![](<../.gitbook/assets/image (17).png>)
 
-| 메시지 유형 | 대체 전송 메시지 유형 |                    주요 파라미터 예시                   |
-| :----: | :----------: | :---------------------------------------------: |
-|   sms  |       -      | <p>"country" : "1",<br>"to" : "01012341234"</p> |
-|   lms  |       -      |                                                 |
-|  at/ai |       -      |                                                 |
-|        |      sms     |                                                 |
-|        |      lms     |                                                 |
-|   ft   |       -      |                                                 |
-|        |      sms     |                                                 |
-|        |      lms     |                                                 |
-
-
+![](<../.gitbook/assets/image (3).png>)
 
 ### Response
 
@@ -741,12 +698,7 @@ Content-type: application/json
 
 **Body**
 
-|      키      |  타입  |  길이 |  필수 | 설명                                   |
-| :---------: | :--: | :-: | :-: | ------------------------------------ |
-|     code    | text |  5  |  Y  | 결과 코드 **\* 8. API 응답 상태 및 결과 코드 참조** |
-| description | text |  32 |  Y  | 결과 메시지                               |
-|  messagekey | text |  32 |  Y  | 메시지 키 **\* 고객 문의 및 리포트 재 요청 기준 키**   |
-|    refkey   | Text |  32 |  Y  | 고객사에서 부여한 키                          |
+![](<../.gitbook/assets/image (26).png>)
 
 **예시)**
 
@@ -758,10 +710,4 @@ Content-type: application/json
   "messagekey": "190922175225820#ft002951servj8FU67"
 }
 ```
-
-
-
-
-
-
 
