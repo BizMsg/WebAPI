@@ -6,7 +6,11 @@
 ## API
 
 * [인증토큰 발급](api/authToken.md)
-* [메시지 발송](api/dispatch.md)
+* [메시지 발송](api/dispatch/README.md)
+  * [SMS](api/dispatch/sms.md)
+  * [LMS](api/dispatch/lms.md)
+  * [MMS](api/dispatch/mms.md)
+  * [카카오톡 비즈메시지](api/dispatch/undefined.md)
 * [File Upload](api/file-upload.md)
 * [발송 결과](api/dispatch-result.md)
 
