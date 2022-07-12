@@ -6,9 +6,9 @@
 ## API
 
 * [인증토큰 발급](api/authToken.md)
-* [메시지 발송](api/undefined.md)
+* [메시지 발송](api/dispatch.md)
 * [File Upload](api/file-upload.md)
-* [발송 결과](api/undefined-1.md)
+* [발송 결과](api/dispatch-result.md)
 
 ## Status Code
 
