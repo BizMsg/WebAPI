@@ -1,3 +1,7 @@
+---
+layout: editorial
+---
+
 # 발송 결과
 
 
