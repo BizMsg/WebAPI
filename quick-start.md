@@ -343,7 +343,7 @@ Post method로 https://api.bizppurio.com/v1/token 지정하고 Headers만 설정
 * Headers 설정
 * Body 입력 (필드 상세설명은 **\*메시지 발송** 탭에서 확인)
 
-![파일 등록 Headers](<.gitbook/assets/image (5) (1).png>)
+![파일 등록 Headers](<.gitbook/assets/image (5) (1) (1).png>)
 
 ![파일 등록 Body](<.gitbook/assets/image (6) (1) (1).png>)
 

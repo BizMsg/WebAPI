@@ -14,44 +14,28 @@
 
 **Headers**
 
-|       키      |   타입   |                값                |
-| :----------: | :----: | :-----------------------------: |
-| Content-type | String | application/json; charset=utf-8 |
+![](<../.gitbook/assets/image (27).png>)
 
 **Body**
 
-|             키             |      타입      |             값             |
-| :-----------------------: | :----------: | :-----------------------: |
-|    Content-Disposition    |    String    | form-data; name="account" |
-|        Content-Type       |    String    | text/plain; charset=UTF-8 |
-| Content-Transfer-Encoding |    String    |            8bit           |
-|            file           | File(String) |          filename         |
-|            name           |    String    |            file           |
-|          account          |    String    |           계정 ID           |
+![](<../.gitbook/assets/image (24).png>)
 
 ****\
 **Response**
 
 **Headers**
 
-|       키      |   타입   |                값                |
-| :----------: | :----: | :-----------------------------: |
-| Content-type | String | application/json; charset=utf-8 |
+![](<../.gitbook/assets/image (25).png>)
 
 **Body**
 
 **성공**
 
-|    키    |  타입  |  길이 |  필수 |  설명  |
-| :-----: | :--: | :-: | :-: | :--: |
-| filekey | text |  40 |  Y  | 파일 키 |
+![](<../.gitbook/assets/image (8).png>)
 
 **실패**
 
-|      키      |  타입  |  길이 |  필수 |                  설명                  |
-| :---------: | :--: | :-: | :-: | :----------------------------------: |
-|     code    | text |  5  |  Y  | 결과 코드 **\* 8. API 응답 상태 및 결과 코드 참조** |
-| description | text |  32 |  Y  |                 결과 메시                |
+![](<../.gitbook/assets/image (5).png>)
 
 ### Examples
 
@@ -102,13 +86,6 @@ Content-type: application/json
   "filekey": "0920msg_123912934949595969"
 }
 ```
-
-* 실패
-
-|      키      |  타입  |  길이 |  필수 |                  설명                  |
-| :---------: | :--: | :-: | :-: | :----------------------------------: |
-|     code    | text |  5  |  Y  | 결과 코드 **\* 8. API 응답 상태 및 결과 코드 참조** |
-| description | text |  32 |  Y  |                결과 메시지                |
 
 
 
