@@ -14,18 +14,18 @@
 
 **Headers**
 
-![](<../.gitbook/assets/image (27).png>)
+![](<../.gitbook/assets/image (27) (1).png>)
 
 **Body**
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (24) (1).png>)
 
 ****\
 **Response**
 
 **Headers**
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (25) (1).png>)
 
 **Body**
 
@@ -35,7 +35,7 @@
 
 **실패**
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 ### Examples
 

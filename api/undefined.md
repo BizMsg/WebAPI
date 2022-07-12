@@ -69,7 +69,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### SMS
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 
 ```json
 {
@@ -126,7 +126,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **file**
 
-![](<../.gitbook/assets/image (25) (1) (1).png>)
+![](<../.gitbook/assets/image (25) (1) (1) (1).png>)
 
 ```json
 {
@@ -159,7 +159,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### AT/AI**/FT**
 
-![](<../.gitbook/assets/image (24) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png>)
 
 ### BUTTON
 
@@ -167,7 +167,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **버튼 타입 별 속성 (\*type)**
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1).png>)
 
 
 
@@ -189,7 +189,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **버튼 타입 별 속성 (\*type)**
 
-![](<../.gitbook/assets/image (26) (1).png>)
+![](<../.gitbook/assets/image (26) (1) (1).png>)
 
 ### Examples
 
@@ -319,11 +319,11 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **글자 수**
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 **\[줄 수(Media Tall인 경우, 접혀있는 경우)]**
 
-![](<../.gitbook/assets/image (24) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1) (1) (1).png>)
 
 **\[줄 수(Media Medium인 경우, 접혀있는 경우)]**
 
@@ -337,7 +337,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 **\[줄 수 (Media 없는 경우, RCS A2P 단말 기준)]**
 
-![](<../.gitbook/assets/image (24) (1) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1) (1).png>)
 
 **\[줄 수 (Media Medium인 경우, RCS A2P 단말 기준)]**
 
@@ -355,7 +355,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### MESSAGE
 
-![](<../.gitbook/assets/image (27) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1).png>)
 
 
 
@@ -384,7 +384,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### BUTTON
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 
 
@@ -396,7 +396,7 @@ NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1
 
 ### ACTION
 
-![](<../.gitbook/assets/image (25) (1).png>)
+![](<../.gitbook/assets/image (25) (1) (1).png>)
 
 
 
@@ -563,7 +563,7 @@ RCS : 공통 포맷 : CMwMhM0300 (**MMS Carousel Medium 3장**) 사용 **첨부�
 
 메시지 전송이 실패한 경우, 대체 전송 설정
 
-![](<../.gitbook/assets/image (24) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1).png>)
 
 **1차 대체 전송**
 
@@ -698,7 +698,7 @@ Content-type: application/json
 
 **Body**
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (26) (1).png>)
 
 **예시)**
 
