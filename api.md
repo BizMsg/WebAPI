@@ -1,7 +1,3 @@
----
-layout: editorial
----
-
 # API 상태코드/결과코드
 
 ### 상태코드
