@@ -70,13 +70,17 @@
 
 이미지는 등록일로부터 365일간 발송 가능합니다. (이후 자동 삭제)
 
-**이미지 URL**
-
-포맷 : **maapfile://{fileId}**
-
-예시 : "media":"maapfile://BR.i6dOpSm8N8.20200302150000.001"
-
-
+> **이미지 URL**
+>
+> **포맷**&#x20;
+>
+> maapfile://{fileId}
+>
+> &#x20;****&#x20;
+>
+> **예시**&#x20;
+>
+> "media" : "maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
 **동영상 스트리밍**
 
@@ -84,6 +88,22 @@
   ****(정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
 * 동영상 썸네일은 등록된 이미지만 사용 가능하며 YouTube URL 뒤에 콤마(,)와 함께 입력\
   (콤마(,) 외 공백을 포함하는 경우 실패)
+
+> **동영상 스트리밍 URL**
+>
+> **포맷**&#x20;
+>
+> https://www.youtube.com/watch?v=\[videoId],maapfile://{썸네일용 fileId\_1}
+>
+> https://youtu.be/\[VideoId],maapfile://{썸네일용 fileId\_2}
+>
+> https://m.youtube.com/watch?v=\[videoId],maapfile://{썸네일용 fileId\_3}
+>
+> &#x20;
+>
+> **예시**&#x20;
+>
+> "media1" : "https://www.youtube.com/watch?v=KCbtF9I0qvI,maapfile://BR.i6dOpSm8N8.20200302150000.001"
 
 
 
