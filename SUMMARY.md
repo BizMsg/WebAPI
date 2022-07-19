@@ -22,3 +22,7 @@
 * [LMS/MMS](status-code/lms-mms.md)
 * [AT/AI/FT](status-code/at-ai-ft.md)
 * [RCS](status-code/rcs.md)
+
+***
+
+* [개정 이력](revision.md)
