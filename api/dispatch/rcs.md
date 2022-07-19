@@ -14,15 +14,7 @@
 >
 > 줄(라인) 수 : expand 없이 메시지 버블 최대크기에서 표현 가능한 description 줄 수
 
-**LMS (Standalone No media)**
-
-**\[글자 수]**
-
-![](<../../.gitbook/assets/image (20) (1).png>)
-
-**\[줄 수(접혀있는 경우)]**
-
-![](<../../.gitbook/assets/image (12).png>)
+****
 
 **MMS (Standalone Media Top – 세로형)**
 
