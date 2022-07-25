@@ -6,7 +6,7 @@
 
 **공통 포맷(MESSAGEBASE ID)**
 
-![](<../../.gitbook/assets/image (23) (1) (1).png>)
+![](<../../.gitbook/assets/image (28).png>)
 
 > **\*글자수 및 라인수 정의**
 >
