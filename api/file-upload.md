@@ -14,7 +14,7 @@
 
 **Headers**
 
-![](<../.gitbook/assets/image (27) (1).png>)
+![](<../.gitbook/assets/image (27) (1) (1).png>)
 
 **Body**
 

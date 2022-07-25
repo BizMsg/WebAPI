@@ -2,7 +2,7 @@
 
 ### SMS
 
-![](<../../.gitbook/assets/image (10) (1) (1).png>)
+![](<../../.gitbook/assets/image (10) (1) (1) (1).png>)
 
 ```json5
 {
