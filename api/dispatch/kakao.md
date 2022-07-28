@@ -26,7 +26,7 @@
 
 ### QUICKREPLY
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../.gitbook/assets/image (15) (1).png>)
 
 **버튼 타입 별 속성 (\*type)**
 
