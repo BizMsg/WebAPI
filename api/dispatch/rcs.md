@@ -6,7 +6,7 @@
 
 **공통 포맷(MESSAGEBASE ID)**
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (15).png>)
 
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
@@ -284,9 +284,173 @@ RCS : 공통 포맷 : CMwMhM0300 (**MMS Carousel Medium 3장**) 사용 **첨부�
 
 ```
 
-****
+**New RCS examples**
 
-****
+Highlighted image n title (이미지 & 타이틀 강조형)
+
+```json5
+{
+  "body": {
+    "media": "maapfile://fileId123", (필수)
+    "title": "제목",
+    "subTitle1": "소제목1",(필수)
+    "subDesc1": "소본문1",(필수)
+    "subTitle2": "소제목2",
+    "subDesc2": "소본문2"
+  },
+  "buttons": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google.com"
+              }
+            },
+            "displayText": "구글"
+          }
+        },
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.naver.com"
+              }
+            },
+            "displayText": "네이버"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+이미지 강조형, SNS형
+
+```json5
+{
+  "body": {
+    "media": "maapfile://fileId123",(필수)
+    "title": "제목",
+    "description": "본문"(필수)
+  },
+  "buttons": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google.com"
+              }
+            },
+            "displayText": "구글"
+          }
+        },
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.naver.com"
+              }
+            },
+            "displayText": "네이버"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+썸네일형 (세로)
+
+```json5
+{
+  "body": {
+    "media": "maapfile://fileId123",(필수)
+    "title": "제목",
+    "description": "본문",
+    "subMedia1": "maapfile://fileid456",(필수)
+    "subMediaUrl1": "http://www.naver.com",
+    "subDesc1": "소본문1 이미지클릭가능",(필수)
+    "subMedia2": "maapfile://fileid789",(필수)
+    "subDesc2": "소본문2 이미지클릭불가"(필수)
+  },
+  "buttons": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google.com"
+              }
+            },
+            "displayText": "구글"
+          }
+        },
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.naver.com"
+              }
+            },
+            "displayText": "네이버"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+썸네일형 (가로)
+
+```json5
+{
+  "body": {
+    "media": "maapfile://fileId123",(필수)
+    "title": "제목",
+    "description": "본문",(필수)
+    "subMedia1": "maapfile://fileid456",(필수)
+    "subMediaUrl1": "http://www.naver.com",
+    "subMedia2": "maapfile://fileid789",(필수)
+    "subMedia3": "maapfile://fileid000"(필수)
+  },
+  "buttons": [
+    {
+      "suggestions": [
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.google.com"
+              }
+            },
+            "displayText": "구글"
+          }
+        },
+        {
+          "action": {
+            "urlAction": {
+              "openUrl": {
+                "url": "https://www.naver.com"
+              }
+            },
+            "displayText": "네이버"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+
 
 ### RESEND
 

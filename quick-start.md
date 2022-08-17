@@ -351,7 +351,7 @@ Post method로 https://api.bizppurio.com/v1/token 지정하고 Headers만 설정
 
 ### 발송
 
-![발송 Headers](<.gitbook/assets/image (15).png>)
+![발송 Headers](<.gitbook/assets/image (15) (2).png>)
 
 {% code title="Body" %}
 ```json
