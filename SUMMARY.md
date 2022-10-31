@@ -14,6 +14,7 @@
   * [RCS](api/dispatch/rcs.md)
 * [File Upload](api/file-upload.md)
 * [발송 결과](api/dispatch-result.md)
+* [발송 결과 재 요청](api/undefined.md)
 
 ## Status Code
 

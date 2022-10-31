@@ -37,7 +37,7 @@ Content-type: application/json
 
 **Body**
 
-![](<../.gitbook/assets/image (7).png>)
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 
 
