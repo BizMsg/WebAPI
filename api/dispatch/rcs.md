@@ -470,7 +470,7 @@ Ex) 미국(1) 010-1234-1234로 전송하는 경우
 
 ![](<../../.gitbook/assets/image (17).png>)
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (2).png>)
 
 
 

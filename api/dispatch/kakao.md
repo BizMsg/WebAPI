@@ -2,7 +2,7 @@
 
 ### AT/AI**/FT**
 
-![](<../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ### BUTTON
 
