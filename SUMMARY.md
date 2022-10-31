@@ -12,6 +12,7 @@
   * [MMS](api/dispatch/mms.md)
   * [카카오톡 비즈메시지](api/dispatch/kakao.md)
   * [RCS](api/dispatch/rcs.md)
+  * [대체 발송](api/dispatch/undefined.md)
 * [File Upload](api/file-upload.md)
 * [발송 결과](api/dispatch-result.md)
 * [발송 결과 재 요청](api/undefined.md)
