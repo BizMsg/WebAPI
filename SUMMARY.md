@@ -14,8 +14,10 @@
   * [RCS](api/dispatch/rcs.md)
   * [대체 발송](api/dispatch/undefined.md)
 * [File Upload](api/file-upload.md)
-* [발송 결과](api/dispatch-result.md)
-* [발송 결과 재 요청](api/undefined.md)
+* [발송 결과 (PUSH 방식)](api/dispatch-result.md)
+* [발송 결과 재 요청 (PUSH 방식)](api/push.md)
+* [발송 결과 요청 (POLLING 방식)](api/polling.md)
+* [발송 결과 완료 처리 (POLLING 방식)](api/polling-1.md)
 
 ## Status Code
 
