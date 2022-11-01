@@ -6,7 +6,7 @@
 
 **공통 포맷(MESSAGEBASE ID)**
 
-![](<../../.gitbook/assets/image (15).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >

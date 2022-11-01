@@ -4,7 +4,7 @@
 
 메시지 발송이 실패한 경우, 대체 전송 설정
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **LMS 대체발송은 MMS 로 설정하여 진행합니다.**
