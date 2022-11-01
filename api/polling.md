@@ -13,11 +13,15 @@
 
 ### **Request**
 
-**Headers**
-
 | **설명**  | <ul><li>발송 결과를 Polling 방식으로 요청하는 기능입니다.</li></ul> |
 | :-----: | ------------------------------------------------- |
 | **URL** | **api.bizppurio.com/v1/result/request**           |
+
+**Headers**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+****
 
 **Body**
 
@@ -26,3 +30,17 @@
 ****
 
 ### Response
+
+**Headers**
+
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+**Body**
+
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+**ex)**
+
+```
+// Some code
+```
