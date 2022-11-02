@@ -31,7 +31,7 @@
 
 **성공**
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (2).png>)
 
 **실패**
 
