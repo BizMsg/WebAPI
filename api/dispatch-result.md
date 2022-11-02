@@ -74,6 +74,10 @@ Content-type: application/json
 
 ## 발송 결과 재 요청
 
+| **설명**  | <ul><li>발송 결과를 재요청하는 기능입니다.</li></ul>   |
+| :-----: | --------------------------------------- |
+| **URL** | **\[POST] api.bizppurio.com/v2/report** |
+
 ### **Request**
 
 **Header**
@@ -117,5 +121,6 @@ Content-type: application/json
 ```json5
 {
   "code": 1000,
-  "descripti
+  "description": "Success"
+}
 ```
