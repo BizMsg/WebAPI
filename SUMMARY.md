@@ -16,9 +16,7 @@
 * [File Upload](api/file-upload.md)
 * [발송 결과 전달](api/undefined/README.md)
   * [PUSH 방식](api/dispatch-result.md)
-  * [발송 결과 재 요청 (PUSH 방식)](api/push.md)
   * [POLLING 방식](api/polling.md)
-  * [발송 결과 완료 처리 (POLLING 방식)](api/polling-1.md)
 
 ## Status Code
 
