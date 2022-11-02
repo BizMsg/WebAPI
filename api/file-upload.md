@@ -37,7 +37,7 @@ Content-Transfer-Encoding: binary
 --5d14-GC42dS9N5BXQAKuhpRfd4VDV54RDDsTJO4--
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### **Response**
 

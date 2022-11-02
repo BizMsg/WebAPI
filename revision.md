@@ -1,5 +1,3 @@
 # 개정 이력
 
-
-
-![](<.gitbook/assets/image (28) (1) (1).png>)
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
