@@ -18,7 +18,7 @@ Authorization: Bearer {인증 토큰 발급을 통해 받은 type + " " + access
 
 **Body**
 
-![](<../.gitbook/assets/image (28) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (28) (1) (1) (1).png>)
 
 **ex)**
 
@@ -42,7 +42,7 @@ Content-type: application/json
 
 **Body**
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (24).png>)
 
 **ex)**
 
