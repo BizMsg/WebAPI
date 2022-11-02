@@ -1,22 +1,9 @@
-# 발송 결과
+# 발송 결과 전달 (PUSH 방식)
 
-
-
-### Parameter Description
-
-| **설명**  | <ul><li>발송 결과를 재요청하는 기능입니다.</li></ul> |
-| :-----: | ------------------------------------- |
-| **URL** | **api.bizppurio.com/v2/report**       |
-
-**Request**
-
-**Header**
-
-![](<../.gitbook/assets/image (26) (1).png>)
-
-**Body**
-
-![](<../.gitbook/assets/image (27) (1).png>)
+{% hint style="info" %}
+비즈뿌리오 리포트 수신 URL을 설정하였다면 발송 결과가 발생함과 동시에 PUSH 방식으로 전달됩니다.\
+(결과 요청 할 필요 없음)
+{% endhint %}
 
 
 
@@ -38,6 +25,22 @@ Content-type: application/json
 **Body**
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+**예시)**
+
+```json
+{
+  "DEVICE": "SMS",
+  "CMSGID": "201027134355944sms027420servqer0",
+  "MSGID": "1027se_SL4676027383600490148",
+  "PHONE": "01000000000",
+  "MEDIA": "SMS",
+  "UNIXTIME": "1603773837",
+  "RESULT": "4100",
+  "USERDATA": "daoutech",
+  "WAPINFO": "SKT"
+}
+```
 
 
 
@@ -64,20 +67,4 @@ Content-type: application/json
 | RLS |    RCS LMS 발송   |
 | RMS |    RCS MMS 발송   |
 | RTS | RCS TEMPLATE 발송 |
-
-**예시)**
-
-```json
-{
-  "DEVICE": "SMS",
-  "CMSGID": "201027134355944sms027420servqer0",
-  "MSGID": "1027se_SL4676027383600490148",
-  "PHONE": "01000000000",
-  "MEDIA": "SMS",
-  "UNIXTIME": "1603773837",
-  "RESULT": "4100",
-  "USERDATA": "daoutech",
-  "WAPINFO": "SKT"
-}
-```
 
