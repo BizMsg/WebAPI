@@ -15,10 +15,10 @@
   * [대체 발송](api/dispatch/undefined.md)
 * [File Upload](api/file-upload.md)
 * [발송 결과 전달](api/undefined/README.md)
-  * [발송 결과 전달 (PUSH 방식)](api/undefined/dispatch-result.md)
-  * [발송 결과 재 요청 (PUSH 방식)](api/undefined/push.md)
-  * [발송 결과 요청 및 완료 처리 (POLLING 방식)](api/undefined/polling.md)
-  * [발송 결과 완료 처리 (POLLING 방식)](api/undefined/polling-1.md)
+  * [PUSH 방식](api/dispatch-result.md)
+  * [발송 결과 재 요청 (PUSH 방식)](api/push.md)
+  * [POLLING 방식](api/polling.md)
+  * [발송 결과 완료 처리 (POLLING 방식)](api/polling-1.md)
 
 ## Status Code
 

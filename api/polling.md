@@ -1,4 +1,6 @@
-# 발송 결과 요청 및 완료 처리 (POLLING 방식)
+# POLLING 방식
+
+
 
 * **Polling 방식을 사용하기 위해서는 별도로 사용 요청이 필요합니다.**
 * Polling 방식으로 발송 요청한 메시지들에 대해 일정 시간 후 발송 결과를 확인하는 방식입니다.
@@ -7,7 +9,9 @@
 * 1회 호출 시 최대 1,000개의 발송 결과를 응답합니다.
 * 빈번한 발송 결과 요청은 정책에 따라 차단될 수 있습니다.
 
-## Parameter Description
+
+
+## 발송 결과 요청
 
 ### **Request**
 
@@ -17,13 +21,13 @@
 
 **Headers**
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ****
 
 **Body**
 
-<figure><img src="../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 ****
 
@@ -31,11 +35,11 @@
 
 **Headers**
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 **Body**
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 **ex)**
 
@@ -45,26 +49,26 @@
   "description": "success",
   "report": [
     {
-      "DEVICE": "SMS",
-      "CMSGID": "201027134355944sms027420servqer0",
-      "MSGID": "1027se_SL4676027383600490148",
-      "PHONE": "01000000000",
-      "MEDIA": "SMS",
-      "UNIXTIME": "1603773837",
-      "RESULT": "4100",
-      "USERDATA": "daoutech",
-      "WAPINFO": "SKT"
+      "device": "SMS",
+      "cmsgid": "201027134355944sms027420servqer0",
+      "msgid": "1027se_SL4676027383600490148",
+      "phone": "01000000000",
+      "media": "SMS",
+      "unixtime": "1603773837",
+      "result": "4100",
+      "userdata": "daoutech",
+      "wapinfo": "SKT"
     },
     {
-      "DEVICE": "SMS",
-      "CMSGID": "201027134355944sms027420servqer1",
-      "MSGID": "1027se_SL4676027383600490148",
-      "PHONE": "01000000000",
-      "MEDIA": "SMS",
-      "UNIXTIME": "1603773837",
-      "RESULT": "4100",
-      "USERDATA": "daoutech",
-      "WAPINFO": "SKT"
+      "device": "SMS",
+      "cmsgid": "201027134355944sms027420servqer0",
+      "msgid": "1027se_SL4676027383600490148",
+      "phone": "01000000000",
+      "media": "SMS",
+      "unixtime": "1603773837",
+      "result": "4100",
+      "userdata": "daoutech",
+      "wapinfo": "SKT"
     }
   ]
 }
