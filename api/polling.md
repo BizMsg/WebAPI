@@ -13,11 +13,17 @@
 
 ## 발송 결과 요청
 
+```http
+POST /v1/result/request HTTP/1.1
+Content-type: application/json; charset=utf-8
+Authorization: Bearer {accesstoken}
+```
+
 ### **Request**
 
 | **설명**  | <ul><li>발송 결과를 Polling 방식으로 요청하는 기능입니다.</li></ul> |
 | :-----: | ------------------------------------------------- |
-| **URL** | **api.bizppurio.com/v1/result/request**           |
+| **URL** | **\[POST] api.bizppurio.com/v1/result/request**   |
 
 **Headers**
 
@@ -71,5 +77,63 @@
       "wapinfo": "SKT"
     }
   ]
+}
+```
+
+
+
+
+
+### Request
+
+**Headers**
+
+```http
+POST /v1/result/confirm HTTP/1.1
+Content-type: application/json
+Authorization: Bearer {인증 토큰 발급을 통해 받은 type + " " + accesstoken}
+```
+
+**Body**
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fp24PXjwQmS4twkdG8tKP%2Fuploads%2FX4QqXu4lZ913VnQEy7Yg%2Fimage.png?alt=media&#x26;token=4ea5d84b-1760-443f-9975-4ec470e1e9a9" alt=""><figcaption></figcaption></figure>
+
+**ex)**
+
+```json5
+{
+  "account": "test",
+  "msgid": [
+    {
+      "msgid": "1027se_SL4676027383600490148"
+    },
+    {
+      "msgid": "1027se_SL4676027383600490149"
+    }
+  ]
+}
+```
+
+
+
+## 발송 결과 완료 처리
+
+### Response
+
+**Headers**
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+```
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fp24PXjwQmS4twkdG8tKP%2Fuploads%2FBW7nksxWEmLP5LpzmeXd%2Fimage.png?alt=media&#x26;token=158c5455-977f-4ea5-b0b8-d3355db0c05c" alt=""><figcaption></figcaption></figure>
+
+**ex)**
+
+```json5
+{
+  "code": 1000,
+  "description": "Success"
 }
 ```

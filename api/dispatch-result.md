@@ -81,7 +81,7 @@ Content-type: application/json
 ```http
 POST /v2/report HTTP/1.1
 Content-type: application/json
-Authorization: Bearer {인증 토큰 발급을 통해 받은 type + " " + accesstoken}
+Authorization: Bearer {accesstoken}
 ```
 
 **Body**
