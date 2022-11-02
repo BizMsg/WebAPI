@@ -41,6 +41,33 @@
 
 **ex)**
 
-```
-// Some code
+```json5
+{
+  "code": "1000",
+  "description": "success",
+  "report": [
+    {
+      "DEVICE": "SMS",
+      "CMSGID": "201027134355944sms027420servqer0",
+      "MSGID": "1027se_SL4676027383600490148",
+      "PHONE": "01000000000",
+      "MEDIA": "SMS",
+      "UNIXTIME": "1603773837",
+      "RESULT": "4100",
+      "USERDATA": "daoutech",
+      "WAPINFO": "SKT"
+    },
+    {
+      "DEVICE": "SMS",
+      "CMSGID": "201027134355944sms027420servqer1",
+      "MSGID": "1027se_SL4676027383600490148",
+      "PHONE": "01000000000",
+      "MEDIA": "SMS",
+      "UNIXTIME": "1603773837",
+      "RESULT": "4100",
+      "USERDATA": "daoutech",
+      "WAPINFO": "SKT"
+    }
+  ]
+}
 ```
