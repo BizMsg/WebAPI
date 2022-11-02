@@ -17,18 +17,12 @@
 ```http
 POST /v3/message HTTP/1.1
 Content-type: application/json; charset=utf-8
-Authorization: 인증 토큰 발급을 통해 받은 {type} + " " + {accesstoken}
-
-----------------------------------------------------------------------------------
-
-예시)
-POST /v3/message HTTP/1.1
-Content-type: application/json; charset=utf-8
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZwxvcGVydC5jb20iLCJleHAiOiIx
-NDg1MjcwMDAwMDAwIiwiaHR0cHM6Ly92ZwxvcGVydC5jb20vand0X2NsYWltcy9pc19hZG1pbiI6dHJ1ZSwidXNlcklkIjoiMTEwMjgzNzM3MjcxMDIiLCJ1c2VybmFtZSI6InZlbG9wZXJ0In0.WE5fMufM0NDSVGJ8cAolXGkyB5RmYwCto1pQwDIqo2w
+Authorization: Bearer + " " + {accesstoken}
 ```
 
-
+{% hint style="info" %}
+Bearer 뒤에 공백이 하나 붙음에 유의하시길 바랍니다.
+{% endhint %}
 
 **Body**
 

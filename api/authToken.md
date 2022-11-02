@@ -14,7 +14,9 @@
 
 ![](<../.gitbook/assets/image (9).png>)
 
-### **Response**
+
+
+### Request
 
 **Headers**
 
@@ -24,7 +26,13 @@ Authorization: Basic Base64(계정:암호)
 Content-type: application/json; charset=utf-8
 ```
 
-### **Request**
+{% hint style="info" %}
+Basic 뒤에 공백이 하나 붙음에 유의하시길 바랍니다.
+{% endhint %}
+
+### **Response**
+
+****
 
 **Headers**
 
