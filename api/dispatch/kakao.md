@@ -28,10 +28,6 @@
 
 ![](<../../.gitbook/assets/image (15) (1).png>)
 
-**버튼 타입 별 속성 (\*type)**
-
-![](<../../.gitbook/assets/image (26) (1) (1) (1).png>)
-
 ### Examples
 
 **알림톡**
