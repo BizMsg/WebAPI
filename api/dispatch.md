@@ -85,3 +85,15 @@ Content-type: application/json
 }
 ```
 
+
+
+{% hint style="danger" %}
+****[**code:1000**](https://biztech.gitbook.io/bizclient/)**의 성공 Response는 api 성공을 뜻하며 발송 결과의 성공을 뜻하지 않으므로**
+
+**발송 결과는 비즈뿌리오 실시간 결과조회 페이지의 엑셀을 다운로드 하여 확인하거나**
+
+**발송 결과 리포트를 받아 확인할 수 있습니다.**
+{% endhint %}
+
+
+

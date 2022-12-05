@@ -12,7 +12,7 @@
 
 **Response**
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (2).png>)
 
 
 
