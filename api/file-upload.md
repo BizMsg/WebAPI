@@ -64,7 +64,7 @@ Content-type: application/json
 
 **실패**
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (2).png>)
 
 
 
