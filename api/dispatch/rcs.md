@@ -76,7 +76,7 @@
 
 **MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 - 썸네일형 (가로) )**
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
