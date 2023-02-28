@@ -6,7 +6,7 @@
 
 ### BUTTON
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (2).png>)
 
 **버튼 타입 별 속성 (\*type)**
 

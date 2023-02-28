@@ -6,7 +6,7 @@
 
 **공통 포맷(MESSAGEBASE ID)**
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 > **RCS MMS 슬라이드형(Carousel Medium, Small)은 1,300자까지 발송 가능하나 실제 단말에서 수신 가능한 글자 수가 적어 메시지 내용이 잘려 발송될 수 있습니다.**
 >
@@ -22,7 +22,7 @@
 
 \[글자 수]
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (5).png" alt=""><figcaption></figcaption></figure>
 
 \[줄 수(접혀있는 경우)]
 
@@ -32,11 +32,11 @@
 
 \[글자 수]
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 \[줄 수(Media Tall인 경우, 접혀있는 경우)]
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 \[줄 수(Media Medium인 경우, 접혀있는 경우)]
 
@@ -57,6 +57,28 @@
 ### MESSAGE
 
 ![](<../../.gitbook/assets/image (27) (1) (1) (1).png>)
+
+**MESSAGE(신규 MMS 제외)**
+
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+**MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 – 이미지 & 타이틀 강조형 )**
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+**MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 – 이미지 강조형, SNS형 )**
+
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+**MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 – 썸네일형 (세로) )**
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+**MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 - 썸네일형 (가로) )**
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
@@ -144,7 +166,7 @@
 
 ### SUGGESTIONS
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18) (2).png>)
 
 ### ACTION
 

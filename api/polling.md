@@ -45,7 +45,7 @@ Authorization: Bearer {accesstoken}
 
 **Body**
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 **ex)**
 
@@ -63,7 +63,8 @@ Authorization: Bearer {accesstoken}
       "unixtime": "1603773837",
       "result": "4100",
       "userdata": "daoutech",
-      "wapinfo": "SKT"
+      "wapinfo": "SKT",
+      "refkey": "test1234"
     },
     {
       "device": "SMS",
@@ -74,7 +75,8 @@ Authorization: Bearer {accesstoken}
       "unixtime": "1603773837",
       "result": "4100",
       "userdata": "daoutech",
-      "wapinfo": "SKT"
+      "wapinfo": "SKT",
+      "refkey": "test1234"
     }
   ]
 }
