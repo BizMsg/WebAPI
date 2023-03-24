@@ -24,7 +24,7 @@ Content-type: application/json
 
 **Body**
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **예시)**
 
@@ -38,7 +38,8 @@ Content-type: application/json
   "UNIXTIME": "1603773837",
   "RESULT": "4100",
   "USERDATA": "daoutech",
-  "WAPINFO": "SKT"
+  "WAPINFO": "SKT",
+  "REFKEY" : "smstest00001"
 }
 ```
 
