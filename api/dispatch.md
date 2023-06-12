@@ -2,9 +2,7 @@
 
 ### Parameter Description
 
-| **설명**  | <ul><li>메시지 발송을 요청하는 기능입니다.</li></ul>    |
-| :-----: | ---------------------------------------- |
-| **URL** | **\[POST]** api.bizppurio.com/v3/message |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="555.3333333333333"></th></tr></thead><tbody><tr><td align="center"><strong>설명</strong> </td><td><ul><li>메시지 발송을 요청하는 기능입니다.</li></ul></td></tr><tr><td align="center"><strong>URL</strong></td><td><strong>[POST]</strong> api.bizppurio.com/v3/message</td></tr></tbody></table>
 
 ### Request
 
@@ -26,36 +24,40 @@ Bearer 뒤에 공백이 하나 붙음에 유의하시길 바랍니다.
 
 **Body**
 
-* 공통
+*   공통
 
-![](<../.gitbook/assets/image (14) (1) (1).png>)
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **ex)**
 
 ```json
 {
-  /*text(20)*//*비즈뿌리오 계정*/
-  "account": {},
-  /*text(3)*//*메시지 타입*/
-  "type": {},
-  /*text(20)*//*발신 번호*/
-  "from": {},
-  /*text(20)*//*수신 번호*/
-  "to": {},
-  /*text(20)*//*국가 코드*/
-  "country": {},
-  /*text(20)*//*메시지 데이터*/
-  "content": {
-  /*text(20)*//*고객사에서 부여한 키*/
-  "refkey": {},
-  /*text(20)*//*정산용 부서 코드*/
-  "userinfo": {},
-  /*text(20)*//*대체 전송 메시지 유형*/
-  "resend": {},
-  /*text(20)*//*대체 전송 메시지 데이터*/
-  "recontent": {},
-  /*text(20)*//*특부가 사업자 식별코드*/
-  "resellercode": {}
+    /*text(20)*//*비즈뿌리오 계정*/
+    "account": "",
+    /*text(3)*//*메시지 타입*/
+    "type": "",
+    /*text(16)*//*발신 번호*/
+    "from": "",
+    /*text(16)*//*수신 번호*/
+    "to": "",
+    /*text(203)*//*국가 코드*/
+    "country": "",
+    
+    /*json*//*메시지 데이터*/
+    "content": {
+        /*text(32)*//*고객사에서 부여한 키*/
+        "refkey": "",
+        /*text(50)*//*정산용 부서 코드*/
+        "userinfo": "",
+        /*text(3)*//*대체 전송 메시지 유형*/
+        "resend": "",
+        /*json*//*대체 전송 메시지 데이터*/
+        "recontent": "",
+        /*text(9)*//*특부가 사업자 식별코드*/
+        "resellercode": "",
+        /*text(9)*//*특부가 사업자 식별코드*/
+        "sendtime": ""
+    }
 }
 ```
 
@@ -88,7 +90,7 @@ Content-type: application/json
 
 
 {% hint style="danger" %}
-****[**code:1000**](https://biztech.gitbook.io/bizclient/)**의 성공 Response는 api 성공을 뜻하며 발송 결과의 성공을 뜻하지 않으므로**
+[**code:1000**](https://biztech.gitbook.io/bizclient/)**의 성공 Response는 api 성공을 뜻하며 발송 결과의 성공을 뜻하지 않으므로**
 
 **발송 결과는 비즈뿌리오 실시간 결과조회 페이지의 엑셀을 다운로드 하여 확인하거나**
 

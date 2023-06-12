@@ -72,7 +72,7 @@
 
 **MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 – 썸네일형 (세로) )**
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 **MESSAGE (신규 MMS, 이미지 템플릿 발송 규격 - 썸네일형 (가로) )**
 
@@ -129,7 +129,7 @@
 >
 > maapfile://{fileId}
 >
-> &#x20;****&#x20;
+> &#x20;
 >
 > **예시**&#x20;
 >
@@ -138,7 +138,7 @@
 **동영상 스트리밍**
 
 * 3가지 형태의 YouTube URL 주소 지원 \
-  ****(정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
+  (정확한 형식을 준수해야 하며, 일부만 일치하는 경우 실패)
 * 동영상 썸네일은 등록된 이미지만 사용 가능하며 YouTube URL 뒤에 콤마(,)와 함께 입력\
   (콤마(,) 외 공백을 포함하는 경우 실패)
 

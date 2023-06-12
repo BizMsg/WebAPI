@@ -2,9 +2,7 @@
 
 ### Parameter Description
 
-| <p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong>설명</strong> </p> | <ul><li>API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.</li></ul><ul><li>인증 토큰의 유효 시간은 24시간이며, 이후에는 재발급이 필요합니다.</li></ul><ul><li>Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.</li></ul> |
-| :-------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|                                               **URL**                                               | **\[POST]** api.bizppurio.com/v1/token                                                                                                                                                     |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="593.3333333333333"></th></tr></thead><tbody><tr><td align="center"><p></p><p></p><p></p><p><strong>설명</strong> </p></td><td><ul><li>API 서비스를 이용하기 위해서 인증 토큰을 발급하기 위한 기능입니다.</li></ul><ul><li>인증 토큰의 유효 시간은 24시간이며, 이후에는 재발급이 필요합니다.</li></ul><ul><li>Authorization 헤더에 비즈뿌리오 계정과 암호를 Base64 인코딩한 문자열을 입력합니다.</li></ul></td></tr><tr><td align="center"><strong>URL</strong></td><td><strong>[POST]</strong> api.bizppurio.com/v1/token</td></tr></tbody></table>
 
 **Request**
 
@@ -32,7 +30,7 @@ Basic 뒤에 공백이 하나 붙음에 유의하시길 바랍니다.
 
 ### **Response**
 
-****
+
 
 **Headers**
 

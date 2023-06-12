@@ -4,11 +4,9 @@
 
 ### Parameter Description
 
-| <p><strong></strong></p><p><strong></strong></p><p><strong>설명</strong> </p> | <ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul> |
-| :-------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|                                   **URL**                                   | **\[POST] api.bizppurio.com/v1/file**                                                                                                                           |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="570.3333333333333"></th></tr></thead><tbody><tr><td align="center"><p></p><p></p><p><strong>설명</strong> </p></td><td><ul><li>파일을 업로드 하여 MMS 전송 시 사용할 파일 키를 발급합니다.</li></ul><ul><li>파일은 확장자(jpg/jpeg), 크기(300kbyte 이하) 제한이 있습니다.</li></ul><ul><li>요청 시 파일 업로드 수는 1개로 제한합니다.</li></ul></td></tr><tr><td align="center"><strong>URL</strong></td><td><strong>[POST] api.bizppurio.com/v1/file</strong></td></tr></tbody></table>
 
-****
+
 
 ### **Request**
 

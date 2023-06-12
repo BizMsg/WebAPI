@@ -21,21 +21,19 @@ Authorization: Bearer {accesstoken}
 
 ### **Request**
 
-| **설명**  | <ul><li>발송 결과를 Polling 방식으로 요청하는 기능입니다.</li></ul> |
-| :-----: | ------------------------------------------------- |
-| **URL** | **\[POST] api.bizppurio.com/v1/result/request**   |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="570.3333333333333"></th></tr></thead><tbody><tr><td align="center"><strong>설명</strong> </td><td><ul><li>발송 결과를 Polling 방식으로 요청하는 기능입니다.</li></ul></td></tr><tr><td align="center"><strong>URL</strong></td><td><strong>[POST] api.bizppurio.com/v1/result/request</strong></td></tr></tbody></table>
 
 **Headers**
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-****
+
 
 **Body**
 
 <figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
-****
+
 
 ### Response
 

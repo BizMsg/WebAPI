@@ -1,32 +1,3 @@
 # SMS
 
-|  코드  |            설명           |
-| :--: | :---------------------: |
-| 4100 |            전달           |
-| 4400 |          음영 지역          |
-| 4401 |        단말기 전원 꺼짐        |
-| 4402 |      단말기 메시지 저장 초과      |
-| 4403 |         메시지 삭제 됨        |
-| 4404 |       가입자 위치 정보 없음      |
-| 4405 |         단말기 BUSY        |
-| 4410 |          잘못된 번호         |
-| 4420 |          기타 에러          |
-| 4430 |            스팸           |
-| 4431 |      발송 제한 수신거부(스팸)     |
-| 4411 |         NPDB 에러         |
-| 4412 |          착신 거절          |
-| 4413 |        SMSC 형식오류        |
-| 4414 |    비 가입자, 결번, 서비스 정지    |
-| 4421 |           타임아웃          |
-| 4422 |         단말기 일시정지        |
-| 4423 |         단말기 착신거부        |
-| 4424 |     URL SMS 미 지원 휴대폰    |
-| 4425 |        단말기 호 처리 중       |
-| 4426 |         재시도 한도초과        |
-| 4427 |        기타 단말기 문제        |
-| 4428 |          시스템 에러         |
-| 4432 |       회신 번호 차단(개인)      |
-| 4433 |       회신 번호 차단(기업)      |
-| 4434 | 회신 번호 사전 등록제에 의한 미등록 차단 |
-| 4435 |   KISA 신고 스팸 회신 번호 차단   |
-| 4436 |  회신 번호 사전 등록제 번호 규칙 위반  |
+<table><thead><tr><th width="150" align="center">코드</th><th width="599.3333333333333" align="center">설명</th></tr></thead><tbody><tr><td align="center">4100</td><td align="center">전달</td></tr><tr><td align="center">4400</td><td align="center">음영 지역</td></tr><tr><td align="center">4401</td><td align="center">단말기 전원 꺼짐</td></tr><tr><td align="center">4402</td><td align="center">단말기 메시지 저장 초과</td></tr><tr><td align="center">4403</td><td align="center">메시지 삭제 됨</td></tr><tr><td align="center">4404</td><td align="center">가입자 위치 정보 없음</td></tr><tr><td align="center">4405</td><td align="center">단말기 BUSY</td></tr><tr><td align="center">4410</td><td align="center">잘못된 번호</td></tr><tr><td align="center">4420</td><td align="center">기타 에러</td></tr><tr><td align="center">4430</td><td align="center">스팸</td></tr><tr><td align="center">4431</td><td align="center">발송 제한 수신거부(스팸)</td></tr><tr><td align="center">4411</td><td align="center">NPDB 에러</td></tr><tr><td align="center">4412</td><td align="center">착신 거절</td></tr><tr><td align="center">4413</td><td align="center">SMSC 형식오류</td></tr><tr><td align="center">4414</td><td align="center">비 가입자, 결번, 서비스 정지</td></tr><tr><td align="center">4421</td><td align="center">타임아웃</td></tr><tr><td align="center">4422</td><td align="center">단말기 일시정지</td></tr><tr><td align="center">4423</td><td align="center">단말기 착신거부</td></tr><tr><td align="center">4424</td><td align="center">URL SMS 미 지원 휴대폰</td></tr><tr><td align="center">4425</td><td align="center">단말기 호 처리 중</td></tr><tr><td align="center">4426</td><td align="center">재시도 한도초과</td></tr><tr><td align="center">4427</td><td align="center">기타 단말기 문제</td></tr><tr><td align="center">4428</td><td align="center">시스템 에러</td></tr><tr><td align="center">4432</td><td align="center">회신 번호 차단(개인)</td></tr><tr><td align="center">4433</td><td align="center">회신 번호 차단(기업)</td></tr><tr><td align="center">4434</td><td align="center">회신 번호 사전 등록제에 의한 미등록 차단</td></tr><tr><td align="center">4435</td><td align="center">KISA 신고 스팸 회신 번호 차단</td></tr><tr><td align="center">4436</td><td align="center">회신 번호 사전 등록제 번호 규칙 위반</td></tr></tbody></table>
